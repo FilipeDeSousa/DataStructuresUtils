@@ -1,0 +1,2119 @@
+Name;Parent;Level;Occurance;Type;Min;Max;Description
+ARTMAS09;;0;1;Complex;;;Criar e modificar dados mestre de materiais (comércio)
+IDOC;ARTMAS09;1;1;Complex;;;null
+EDI_DC40;IDOC;2;1;Complex;;;Registro de controle IDoc p/interfaces c/um sistema externo
+TABNAM;EDI_DC40;3;1;null;;;Nome da estrutura de tabela
+MANDT;EDI_DC40;3;0..1;String;;3;Mandante
+DOCNUM;EDI_DC40;3;0..1;String;;16;Nº do IDoc
+DOCREL;EDI_DC40;3;0..1;String;;4;Release SAP do IDoc
+STATUS;EDI_DC40;3;0..1;String;;2;Status do IDoc
+DIRECT;EDI_DC40;3;1;String;;;Direção
+OUTMOD;EDI_DC40;3;0..1;String;;1;Modo de saída
+EXPRSS;EDI_DC40;3;0..1;String;;1;Substituição na entrada
+TEST;EDI_DC40;3;0..1;String;;1;Código de teste
+IDOCTYP;EDI_DC40;3;1;null;;;Nome do tipo básico
+CIMTYP;EDI_DC40;3;0..1;null;;;Ampliação (definida pelo cliente)
+MESTYP;EDI_DC40;3;0..1;String;;30;Tipo de mensagem
+MESCOD;EDI_DC40;3;0..1;String;;3;Variante de mensagem
+MESFCT;EDI_DC40;3;0..1;String;;3;Função da mensagem
+STD;EDI_DC40;3;0..1;String;;1;Standard EDI, código
+STDVRS;EDI_DC40;3;0..1;String;;6;Standard EDI, versão e release
+STDMES;EDI_DC40;3;0..1;String;;6;Tipo de mensagem EDI
+SNDPOR;EDI_DC40;3;1;String;;10;Porta do remetente (sistema SAP, subsistema externo)
+SNDPRT;EDI_DC40;3;1;String;;2;Tipo de parceiro do remetente
+SNDPFC;EDI_DC40;3;0..1;String;;2;Função do parceiro do remetente
+SNDPRN;EDI_DC40;3;1;String;;10;Nº de parceiro do remetente
+SNDSAD;EDI_DC40;3;0..1;String;;21;Endereço do remetente (SADR)
+SNDLAD;EDI_DC40;3;0..1;String;;70;Endereço lógico de remetente
+RCVPOR;EDI_DC40;3;1;String;;10;Porta do destinatário
+RCVPRT;EDI_DC40;3;0..1;String;;2;Tipo de parceiro do destinatário
+RCVPFC;EDI_DC40;3;0..1;String;;2;Função do parceiro do destinatário
+RCVPRN;EDI_DC40;3;1;String;;10;Nº parceiro do destinatário
+RCVSAD;EDI_DC40;3;0..1;String;;21;Endereço do destinatário (SADR)
+RCVLAD;EDI_DC40;3;0..1;String;;70;Endereço lógico do destinatário
+CREDAT;EDI_DC40;3;0..1;String;;8;Data de criação
+CRETIM;EDI_DC40;3;0..1;String;;6;Hora da criação
+REFINT;EDI_DC40;3;0..1;String;;14;File de transferência (EDI Interchange)
+REFGRP;EDI_DC40;3;0..1;String;;14;Grupo de mensagens (EDI Message Group)
+REFMES;EDI_DC40;3;0..1;String;;14;Mensagem (EDI Message)
+ARCKEY;EDI_DC40;3;0..1;String;;70;Chave do arquivo de mensagens externo
+SERIAL;EDI_DC40;3;0..1;String;;20;Seriação
+E1BPE1MATHEAD;IDOC;2;0..1;Complex;;;Transf.dados varejo - segmento cabeçalho com info controle
+FUNCTION;E1BPE1MATHEAD;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MATHEAD;3;0..1;String;;18;Nº do material
+MATL_TYPE;E1BPE1MATHEAD;3;0..1;String;;4;Tipo de material
+MATL_GROUP;E1BPE1MATHEAD;3;0..1;String;;9;Grupo de mercadorias
+MATL_CAT;E1BPE1MATHEAD;3;0..1;String;;2;Ctg.material
+CHAR_PROF;E1BPE1MATHEAD;3;0..1;String;;18;Perfil da característica
+REF_MATL;E1BPE1MATHEAD;3;0..1;String;;18;Material-modelo
+BASIC_VIEW;E1BPE1MATHEAD;3;0..1;String;;1;Código: considerar visão "dados básicos"
+LIST_VIEW;E1BPE1MATHEAD;3;0..1;String;;1;Código: considerar visão "catalogação"
+SALES_VIEW;E1BPE1MATHEAD;3;0..1;String;;1;Código: considerar visão "vendas"
+LOGDC_VIEW;E1BPE1MATHEAD;3;0..1;String;;1;Código: considerar visão "logística centro de distribuição"
+LOGST_VIEW;E1BPE1MATHEAD;3;0..1;String;;1;Código: considerar visão "logística filial"
+POS_VIEW;E1BPE1MATHEAD;3;0..1;String;;1;Código: considerar visão "POS"
+CK_NO_RNGE;E1BPE1MATHEAD;3;0..1;String;;1;Código: verificar nº ext.material em relação a interv.numer.
+ALL_FIELDS;E1BPE1MATHEAD;3;0..1;String;;1;Código: todos os campos de dados úteis relevantes p/modif.
+NO_APPL_LOG;E1BPE1MATHEAD;3;0..1;String;;1;Não escrever log de aplicação
+NO_CHANGE_DOC;E1BPE1MATHEAD;3;0..1;String;;1;Não gravar documentos de modificação
+MATERIAL_EXTERNAL;E1BPE1MATHEAD;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MATHEAD;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MATHEAD;3;0..1;String;;10;Nº de versão para campo MATERIAL
+REF_MATL_EXTERNAL;E1BPE1MATHEAD;3;0..1;String;;40;Nº de material longo para o campo REF_MATL
+REF_MATL_GUID;E1BPE1MATHEAD;3;0..1;String;;32;ID único externo para o campo REF_MATL
+REF_MATL_VERSION;E1BPE1MATHEAD;3;0..1;String;;10;Nº da versão para o campo REF_MATL
+MATERIAL_LONG;E1BPE1MATHEAD;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+REF_MATL_LONG;E1BPE1MATHEAD;3;0..1;String;;40;Material-modelo
+E1BPE1VARKEY;IDOC;2;0..999999;Complex;;;Transf.dados varejo - lista das variantes para mat.genérico
+FUNCTION;E1BPE1VARKEY;3;0..1;String;;3;Função
+MATERIAL;E1BPE1VARKEY;3;0..1;String;;18;Nº do material
+VARIANT;E1BPE1VARKEY;3;0..1;String;;18;Nº de variante
+MATERIAL_EXTERNAL;E1BPE1VARKEY;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1VARKEY;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1VARKEY;3;0..1;String;;10;Nº de versão para campo MATERIAL
+VARIANT_EXTERNAL;E1BPE1VARKEY;3;0..1;String;;40;Nº de material longo para o campo VARIANT
+VARIANT_GUID;E1BPE1VARKEY;3;0..1;String;;32;ID único externo para o campo VARIANT
+VARIANT_VERSION;E1BPE1VARKEY;3;0..1;String;;10;Nº da versão para o campo VARIANT
+MATERIAL_LONG;E1BPE1VARKEY;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+VARIANT_LONG;E1BPE1VARKEY;3;0..1;String;;40;Nº de variante
+E1BPE1AUSPRT;IDOC;2;0..999999;Complex;;;Transferência de dados Retail - avaliação de características
+FUNCTION;E1BPE1AUSPRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1AUSPRT;3;0..1;String;;18;Nº do material
+CHAR_NAME;E1BPE1AUSPRT;3;0..1;String;;30;Nome da característica
+CHAR_VALUE;E1BPE1AUSPRT;3;0..1;String;;30;Valor da característica
+MATERIAL_EXTERNAL;E1BPE1AUSPRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1AUSPRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1AUSPRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1AUSPRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+CHAR_VALUE_LONG;E1BPE1AUSPRT;3;0..1;String;;70;Valor da característica
+CHAR_VAL_CHAR;E1BPE1AUSPRT;3;0..1;String;;70;Valor da característica
+CHAR_VAL_FLOAT_FROM;E1BPE1AUSPRT;3;0..1;String;;24;Valor interno vírgula flutuante desde
+CHAR_VAL_FLOAT_FROM_DV_UOM;E1BPE1AUSPRT;3;0..1;String;;3;Unidade de medida
+CHAR_VAL_FLOAT_FROM_DV_UOM_ISO;E1BPE1AUSPRT;3;0..1;String;;3;Unidade de medida inferior em código ISO
+CHAR_VAL_FLOAT_TO;E1BPE1AUSPRT;3;0..1;String;;24;Valor interno vírgula flutuante até
+CHAR_VAL_FLOAT_TO_DV_UOM;E1BPE1AUSPRT;3;0..1;String;;3;Unidade de medida
+CHAR_VAL_FLOAT_TO_DV_UOM_ISO;E1BPE1AUSPRT;3;0..1;String;;3;Unidade de medida inferior em código ISO
+CHAR_VAL_DEPENDENCY_CODE;E1BPE1AUSPRT;3;0..1;String;;1;Code para dependência de valores
+E1BPE1AUSPRTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1AUSPRT
+FUNCTION;E1BPE1AUSPRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1AUSPRTX;3;0..1;String;;18;Nº do material
+CHAR_NAME;E1BPE1AUSPRTX;3;0..1;String;;30;Nome da característica
+CHAR_VALUE;E1BPE1AUSPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1AUSPRTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1AUSPRTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1AUSPRTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1AUSPRTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+CHAR_VALUE_LONG;E1BPE1AUSPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CHAR_VAL_CHAR;E1BPE1AUSPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CHAR_VAL_FLOAT_FROM;E1BPE1AUSPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CHAR_VAL_FLOAT_FROM_DV_UOM;E1BPE1AUSPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CHAR_VAL_FLOAT_FROM_DV_UOM_ISO;E1BPE1AUSPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CHAR_VAL_FLOAT_TO;E1BPE1AUSPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CHAR_VAL_FLOAT_TO_DV_UOM;E1BPE1AUSPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CHAR_VAL_FLOAT_TO_DV_UOM_ISO;E1BPE1AUSPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CHAR_VAL_DEPENDENCY_CODE;E1BPE1AUSPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+E1BPE1MARART;IDOC;2;0..999999;Complex;;;Transf.dados varejo - dados de material a nível de mandante
+FUNCTION;E1BPE1MARART;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARART;3;0..1;String;;18;Nº do material
+CREATED_ON;E1BPE1MARART;3;0..1;String;;8;Data de criação
+CREATED_BY;E1BPE1MARART;3;0..1;String;;12;Nome do responsável que criou o objeto
+LAST_CHNGE;E1BPE1MARART;3;0..1;String;;8;Data da última modificação
+CHANGED_BY;E1BPE1MARART;3;0..1;String;;12;Nome do responsável pela modificação do objeto
+DEL_FLAG;E1BPE1MARART;3;0..1;String;;1;Marcar mat.para eliminação a nível de mandante
+OLD_MAT_NO;E1BPE1MARART;3;0..1;String;;18;Nº material antigo
+BASE_UOM;E1BPE1MARART;3;0..1;String;;3;Unidade de medida básica
+BASE_UOM_ISO;E1BPE1MARART;3;0..1;String;;3;Unidade de medida básica no código ISO
+PO_UNIT;E1BPE1MARART;3;0..1;String;;3;Unidade de medida do pedido
+PO_UNIT_ISO;E1BPE1MARART;3;0..1;String;;3;Unidade de medida de pedido em code ISO
+DOCUMENT;E1BPE1MARART;3;0..1;String;;22;Nº documento (sem sistema de administração de documentos)
+DOC_TYPE;E1BPE1MARART;3;0..1;String;;3;Tipo de documento (s/sistema administração documentos)
+DOC_VERS;E1BPE1MARART;3;0..1;String;;2;Versão do documento (sem sistema administração documentos)
+DOC_FORMAT;E1BPE1MARART;3;0..1;String;;4;Formato DIN do documento (s/sistema administração documents)
+DOC_CHG_NO;E1BPE1MARART;3;0..1;String;;6;Nº modificação do documento (sem sistema de admin.docs.)
+PAGE_NO;E1BPE1MARART;3;0..1;String;;3;Nº folha do documento (sem sistema de admin. de documentos)
+NO_SHEETS;E1BPE1MARART;3;0..1;String;;3;Nº de folhas (sem sistema de admin. de documentos)
+PROD_MEMO;E1BPE1MARART;3;0..1;String;;18;Instrução de produção/de controle de qualidade
+PAGEFORMAT;E1BPE1MARART;3;0..1;String;;4;Formato DIN da instrução de produção
+SIZE_DIM;E1BPE1MARART;3;0..1;String;;32;Tamanho/dimensão
+BASIC_MATL;E1BPE1MARART;3;0..1;String;;14;Matéria-base (componente de um material) - obsoleto
+STD_DESCR;E1BPE1MARART;3;0..1;String;;18;Denominação da norma (p.ex. DIN)
+LAB_DESIGN;E1BPE1MARART;3;0..1;String;;3;Laboratório/escritório de engenharia
+PUR_VALKEY;E1BPE1MARART;3;0..1;String;;4;Chave de valores de Compras
+NET_WEIGHT;E1BPE1MARART;3;0..1;String;;15;Peso líquido
+CONTAINER;E1BPE1MARART;3;0..1;String;;2;Instrução de recipiente
+STOR_CONDS;E1BPE1MARART;3;0..1;String;;2;Condições de estocagem
+TEMP_CONDS;E1BPE1MARART;3;0..1;String;;2;Código para a condição de temperatura
+TRANS_GRP;E1BPE1MARART;3;0..1;String;;4;Grupo de transporte
+HAZ_MAT_NO;E1BPE1MARART;3;0..1;String;;18;Nº substância perigosa
+DIVISION;E1BPE1MARART;3;0..1;String;;2;Setor de atividade
+COMPETITOR;E1BPE1MARART;3;0..1;String;;10;Concorrente
+QTY_GR_GI;E1BPE1MARART;3;0..1;String;;15;Qtd.: determinação do número notas acompanhamento a imprimir
+PROC_RULE;E1BPE1MARART;3;0..1;String;;1;Norma de suprimento
+SUP_SOURCE;E1BPE1MARART;3;0..1;String;;1;Fonte de suprimento
+SEASON;E1BPE1MARART;3;0..1;String;;4;Ctg.sazonal
+LABEL_TYPE;E1BPE1MARART;3;0..1;String;;2;Tipo de etiquetagem
+LABEL_FORM;E1BPE1MARART;3;0..1;String;;2;Forma da etiqueta
+PROD_HIER;E1BPE1MARART;3;0..1;String;;18;Hierarquia de produtos
+CAD_ID;E1BPE1MARART;3;0..1;String;;1;Código CAD
+ALLOWED_WT;E1BPE1MARART;3;0..1;String;;15;Peso admissível da embalagem
+PACK_WT_UN;E1BPE1MARART;3;0..1;String;;3;Unidade de peso (peso admissível de embalagem)
+PACK_WT_UN_ISO;E1BPE1MARART;3;0..1;String;;3;Unidade de peso (peso admissível de embalagem) em code ISO
+ALLWD_VOL;E1BPE1MARART;3;0..1;String;;15;Volume de embalagem admissível
+PACK_VO_UN;E1BPE1MARART;3;0..1;String;;3;Unidade de volume (volume admissível de embalagem)
+PACK_VO_UN_ISO;E1BPE1MARART;3;0..1;String;;3;Unidade de volume (volume admissível) em code ISO
+WT_TOL_LT;E1BPE1MARART;3;0..1;String;;5;Tolerância excesso de peso da unidade comercial
+VOL_TOL_LT;E1BPE1MARART;3;0..1;String;;5;Tolerância excesso de volume da unidade comercial
+VAR_ORD_UN;E1BPE1MARART;3;0..1;String;;1;UM pedido variável ativa
+BATCH_MGMT;E1BPE1MARART;3;0..1;String;;1;Código para administração em lote obrigatória
+SH_MAT_TYP;E1BPE1MARART;3;0..1;String;;4;Tipo de material de embalagem
+FILL_LEVEL;E1BPE1MARART;3;0..1;String;;4;Nível de preenchimento (por volume)
+STACK_FACT;E1BPE1MARART;3;0..1;String;;6;Fator de empilhamento
+MAT_GRP_SM;E1BPE1MARART;3;0..1;String;;4;Grupo de materiais material de embalagem
+AUTH_GROUP;E1BPE1MARART;3;0..1;String;;4;Grupo de autorizações
+QM_PROCMNT;E1BPE1MARART;3;0..1;String;;1;QM no suprimento está ativo
+CATPROFILE;E1BPE1MARART;3;0..1;String;;9;Perfil do catálogo
+MINREMLIFE;E1BPE1MARART;3;0..1;String;;6;Tempo de validade restante
+SHELF_LIFE;E1BPE1MARART;3;0..1;String;;6;Prazo de validade
+STOR_PCT;E1BPE1MARART;3;0..1;String;;4;Percentagem para armazenagem
+VALID_FROM;E1BPE1MARART;3;0..1;String;;8;Data de início da validade
+DELN_DATE;E1BPE1MARART;3;0..1;String;;8;Data da liquidação
+SAESON_YR;E1BPE1MARART;3;0..1;String;;4;Exercício sazonal
+PRICE_BAND;E1BPE1MARART;3;0..1;String;;2;Tipo de faixa de preço
+EMPTIESBOM;E1BPE1MARART;3;0..1;String;;1;Código: lista técnica de vasilhames
+EXTMATLGRP;E1BPE1MARART;3;0..1;String;;18;Grupo de mercadorias externo
+CONF_MATL;E1BPE1MARART;3;0..1;String;;18;Material configurável geral
+PR_REF_MAT;E1BPE1MARART;3;0..1;String;;18;Mat.ref.p/prç.
+PUR_STATUS;E1BPE1MARART;3;0..1;String;;2;Status material p/todos os centros
+SAL_STATUS;E1BPE1MARART;3;0..1;String;;2;Status de material para todos os canais de vendas
+PVALIDFROM;E1BPE1MARART;3;0..1;String;;8;Data a partir da qual stat.mat.p/todos os centros é válido
+SVALIDFROM;E1BPE1MARART;3;0..1;String;;8;Data a partir da qual o status mat.p/todos can.dist.é válido
+TAX_CLASS;E1BPE1MARART;3;0..1;String;;1;Classificação fiscal do material
+CONT_UNIT;E1BPE1MARART;3;0..1;String;;3;Unidade de medida conteúdo
+CONT_UNIT_ISO;E1BPE1MARART;3;0..1;String;;3;Unidade de medida de conteúdo em code ISO
+NET_CONT;E1BPE1MARART;3;0..1;String;;15;Conteúdo líquido
+COMPPRUNIT;E1BPE1MARART;3;0..1;String;;6;Preço de comparação
+GROSS_CONT;E1BPE1MARART;3;0..1;String;;15;Conteúdo bruto
+PRPROFVAR;E1BPE1MARART;3;0..1;String;;1;Perfil de cálculo para variantes
+QUAL_DIK;E1BPE1MARART;3;0..1;String;;1;Material com direito a bonificação em espécie
+ENVT_RLVT;E1BPE1MARART;3;0..1;String;;1;Código: relevância para o meio ambiente
+PROD_ALLOC;E1BPE1MARART;3;0..1;String;;18;Alocação de produtos: esquema de alocação de produtos
+SEASMATCAT;E1BPE1MARART;3;0..1;String;;2;Coleção em uma época
+HAZMATPROF;E1BPE1MARART;3;0..1;String;;3;Perfil para código de mercadoria perigosa
+HIGH_VISC;E1BPE1MARART;3;0..1;String;;1;Código: de alta viscosidade
+LOOSEORLIQ;E1BPE1MARART;3;0..1;String;;1;Código: a granel / líquido
+CLOSED_BOX;E1BPE1MARART;3;0..1;String;;1;O material de embalagem é uma embalagem fechada
+APPD_B_REC;E1BPE1MARART;3;0..1;String;;1;Código: é necessário protocolo de lotes autorizado
+PERIOD_IND_EXPIRATION_DATE;E1BPE1MARART;3;0..1;String;;1;Código de período para DV
+ROUND_UP_RULE_EXPIRATION_DATE;E1BPE1MARART;3;0..1;String;;1;Regra de arredondamento para cálculo DV
+PROD_COMPOSITION_ON_PACKAGING;E1BPE1MARART;3;0..1;String;;1;Código: composição do produto impressa na embalagem
+ITEM_CAT;E1BPE1MARART;3;0..1;String;;4;Grupo de categorias de item geral
+BASIC_MATL_NEW;E1BPE1MARART;3;0..1;String;;48;Material básico
+CONF_MATL_EXTERNAL;E1BPE1MARART;3;0..1;String;;40;Nº material longo para o campo CONF_MATL
+CONF_MATL_GUID;E1BPE1MARART;3;0..1;String;;32;GUID externo para campo CONF_MATL
+CONF_MATL_VERSION;E1BPE1MARART;3;0..1;String;;10;Nº de versão para campo CONF_MATL
+HAZ_MAT_NO_EXTERNAL;E1BPE1MARART;3;0..1;String;;40;Nº de material longo para o campo HAZ_MAT_NO
+HAZ_MAT_NO_GUID;E1BPE1MARART;3;0..1;String;;32;GUID externo para campo HAZ_MAT_NO
+HAZ_MAT_NO_VERSION;E1BPE1MARART;3;0..1;String;;10;Nº de versão para campo HAZ_MAT_NO
+MATERIAL_EXTERNAL;E1BPE1MARART;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARART;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARART;3;0..1;String;;10;Nº de versão para campo MATERIAL
+PR_REF_MAT_EXTERNAL;E1BPE1MARART;3;0..1;String;;40;Nº de material longo para o campo PR_REF_MAT
+PR_REF_MAT_GUID;E1BPE1MARART;3;0..1;String;;32;ID único externo para o campo PR_REF_MAT
+PR_REF_MAT_VERSION;E1BPE1MARART;3;0..1;String;;10;Nº da versão para o campo PR_REF_MAT
+PREPACK_GENERIC_MATL;E1BPE1MARART;3;0..1;String;;18;Nº do material genérico em materiais pré-embalados
+E1BPE1MARART1;E1BPE1MARART;3;0..1;Complex;;;Transf.dados varejo - dados de material a nível de mandante
+CREATION_STATUS;E1BPE1MARART1;4;0..1;String;;2;Status de criação suprimento por época
+FREE_CHAR_VALUE;E1BPE1MARART1;4;0..1;String;;18;Valor da característica para fins de análise
+CARE_CODE;E1BPE1MARART1;4;0..1;String;;16;Instruções cuidado (p.ex.,instr.lavag.,instr.pass.ferro,...)
+BRAND_ID;E1BPE1MARART1;4;0..1;String;;4;Marca
+FIBER_CODE_1;E1BPE1MARART1;4;0..1;String;;3;Código de fibras para tecidos (componente 1)
+FIBER_PART_1;E1BPE1MARART1;4;0..1;String;;3;Porcentagem de fibra (componente 1)
+FIBER_CODE_2;E1BPE1MARART1;4;0..1;String;;3;Código de fibras para têxteis (componente 2)
+FIBER_PART_2;E1BPE1MARART1;4;0..1;String;;3;Porcentagem de fibra (componente 2)
+FIBER_CODE_3;E1BPE1MARART1;4;0..1;String;;3;Código de fibras para têxteis (componente 3)
+FIBER_PART_3;E1BPE1MARART1;4;0..1;String;;3;Porcentagem de fibra (componente 3)
+FIBER_CODE_4;E1BPE1MARART1;4;0..1;String;;3;Código de fibras para têxteis (componente 4)
+FIBER_PART_4;E1BPE1MARART1;4;0..1;String;;3;Porcentagem de fibra (componente 4)
+FIBER_CODE_5;E1BPE1MARART1;4;0..1;String;;3;Código de fibras para têxteis (componente 5)
+FIBER_PART_5;E1BPE1MARART1;4;0..1;String;;3;Porcentagem de fibra (componente 5)
+FASHION_GRADE;E1BPE1MARART1;4;0..1;String;;4;Ciclo de vida do produto da moda
+PACKING_REF_MATL;E1BPE1MARART1;4;0..1;String;;18;Material ref.p/materiais a serem embalados da mesma maneira
+PREPACK_GENERIC_MATL_EXTERNAL;E1BPE1MARART1;4;0..1;String;;40;Nº extenso material (futuro desenvolvimento) p/campo PREPA
+PREPACK_GENERIC_MATL_VERSION;E1BPE1MARART1;4;0..1;String;;10;Nº da versão (futuro desenvolvimento) para campo PREPACK_GEN
+PREPACK_GENERIC_MATL_GUID;E1BPE1MARART1;4;0..1;String;;32;GUID externo (desenvolvimento futuro) p/campo PREPACK_GENER
+PACKING_REF_MATL_EXTERNAL;E1BPE1MARART1;4;0..1;String;;40;Nº extenso material (futuro desenvolvimento) p/campo PACKI
+PACKING_REF_MATL_GUID;E1BPE1MARART1;4;0..1;String;;32;GUID externo (futuro desenvolvimento) p/campo PACKING_REF_M
+PACKING_REF_MATL_VERSION;E1BPE1MARART1;4;0..1;String;;10;Nº da versão (futuro desenvolvimento) para campo PACKING_REF
+STD_HU_TYPE;E1BPE1MARART1;4;0..1;String;;4;Tipo de unidade comercial standard
+PILFERABLE;E1BPE1MARART1;4;0..1;String;;1;Com risco de roubo
+WHSE_STORAGE_CONDITION;E1BPE1MARART1;4;0..1;String;;2;Condição de armazenamento
+WHSE_MATERIAL_GROUP;E1BPE1MARART1;4;0..1;String;;4;Grupo de materiais estocáveis
+HANDLING_INDICATOR;E1BPE1MARART1;4;0..1;String;;4;Código de manuseio
+HAZ_MAT_RELEVANT;E1BPE1MARART1;4;0..1;String;;1;Relevante para substância perigosa
+HU_TYPE;E1BPE1MARART1;4;0..1;String;;4;Tipo de unidade comercial
+VARIABLE_TARE_WEIGHT;E1BPE1MARART1;4;0..1;String;;1;Massa líquida variável
+MAX_ALLOWED_CAPACITY;E1BPE1MARART1;4;0..1;String;;17;Capacidade máxima permitida do material de embalagem
+OVERCAPACITY_TOLERANCE;E1BPE1MARART1;4;0..1;String;;5;Tolerância de capacidade máxima da unidade comercial
+MAX_ALLOWED_LENGTH;E1BPE1MARART1;4;0..1;String;;17;Comprimento máximo da embalagem de um material da embalagem
+MAX_ALLOWED_WIDTH;E1BPE1MARART1;4;0..1;String;;17;Largura máxima da embalagem de um material de embalagem
+MAX_ALLOWED_HEIGTH;E1BPE1MARART1;4;0..1;String;;17;Altura máx.da embalagem de um material de embalagem
+MAX_DIMENSION_UN;E1BPE1MARART1;4;0..1;String;;3;Unid.medida p/altura/largura/comprimento máx.da embalagem
+MAX_DIMENSION_UN_ISO;E1BPE1MARART1;4;0..1;String;;3;Unid.medida p/altura/larg./compr.máx.da embalagem em cód.ISO
+COUNTRYORI;E1BPE1MARART1;4;0..1;String;;3;País de origem do material (origem CCI)
+COUNTRYORI_ISO;E1BPE1MARART1;4;0..1;String;;2;País de origem do material em code ISO
+MATFRGTGRP;E1BPE1MARART1;4;0..1;String;;8;Grupo de frete de material
+QUARANTINE_PERIOD;E1BPE1MARART1;4;0..1;String;;4;Quarentena
+QUARANTINE_PERIOD_UN;E1BPE1MARART1;4;0..1;String;;3;Unidade de tempo para quarentena
+QUARANTINE_PERIOD_UN_ISO;E1BPE1MARART1;4;0..1;String;;3;Unidade de tempo de período de quarentena em código ISO
+QUALITY_INSP_GRP;E1BPE1MARART1;4;0..1;String;;4;Grupo de controle de qualidade
+SERIAL_NUMBER_PROFILE;E1BPE1MARART1;4;0..1;String;;4;Perfil nºs de série
+EWM_CW_TOLERANCE_GROUP;E1BPE1MARART1;4;0..1;String;;9;EWM-CW: grupo de tolerância Catch Weight p/EWM
+EWM_CW_INPUT_CONTROL;E1BPE1MARART1;4;0..1;String;;2;EWM-CW: perfil Catch Weight p/entrada da quantidade CW
+PCKGING_SMARTFORM;E1BPE1MARART1;4;0..1;String;;30;Nome do formulário
+ADJUST_PROFILE;E1BPE1MARART1;4;0..1;String;;3;Perfil de ajuste
+ALLOW_PMAT_IGNO;E1BPE1MARART1;4;0..1;String;;1;Preço de variantes permitido (referente ao mestre artigos)
+ANIMAL_ORIGIN_FLAG;E1BPE1MARART1;4;0..1;String;;1;Código: contém partes não têxteis de origem animal
+SEGMENTATION_STRUCTURE;E1BPE1MARART1;4;0..1;String;;4;Estrutura de segmentação
+SEGMENTATION_STRATEGY;E1BPE1MARART1;4;0..1;String;;8;Estratégia de segmentação
+SEGMENTATION_STATUS;E1BPE1MARART1;4;0..1;String;;1;Status de segmentação mestre de materiais
+FASHION_ATTRIBUTE_1;E1BPE1MARART1;4;0..1;String;;10;Campo de informação Fashion: 1
+FASHION_ATTRIBUTE_2;E1BPE1MARART1;4;0..1;String;;10;Campo de informação Fashion: 2
+FASHION_ATTRIBUTE_3;E1BPE1MARART1;4;0..1;String;;6;Campo de informação Fashion: 3
+SEASON_LEVEL;E1BPE1MARART1;4;0..1;String;;1;Código: utilização de época
+SEASON_FLAG;E1BPE1MARART1;4;0..1;String;;1;Código: época ativa na aministração estoques
+SEGMENTATION_SCOPE;E1BPE1MARART1;4;0..1;String;;1;Escopo da estratégia de segmentação
+SEGMENTATION_RELEVANCE;E1BPE1MARART1;4;0..1;String;;1;Relev.p/segmentação
+MATERIAL_CONV_ID;E1BPE1MARART1;4;0..1;String;;2;ID de conversão de material p/conversão valor característica
+MATERIAL_LONG;E1BPE1MARART1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+OLD_MAT_NO_LONG;E1BPE1MARART1;4;0..1;String;;40;Nº material antigo (40 caracteres, tecnicamente necessário)
+HAZ_MAT_NO_LONG;E1BPE1MARART1;4;0..1;String;;40;Nº substância perigosa (40 caracteres, tecnicam.necessário)
+CONF_MATL_LONG;E1BPE1MARART1;4;0..1;String;;40;Mat.configurável válido p/vários cens.(necessários 40 cars.)
+PR_REF_MAT_LONG;E1BPE1MARART1;4;0..1;String;;40;Material de referência para o preço
+PREPACK_GENERIC_MATL_LONG;E1BPE1MARART1;4;0..1;String;;40;Nº material do material genérico em materiais pré-embalados
+PACKING_REF_MATL_LONG;E1BPE1MARART1;4;0..1;String;;40;Material ref.p/materiais a serem embalados da mesma maneira
+E1BPE1MARARTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1MARART
+FUNCTION;E1BPE1MARARTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARARTX;3;0..1;String;;18;Nº material (18 caracteres, modo de compatibilidade)
+CREATED_ON;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CREATED_BY;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LAST_CHNGE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CHANGED_BY;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DEL_FLAG;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+OLD_MAT_NO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BASE_UOM;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BASE_UOM_ISO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PO_UNIT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PO_UNIT_ISO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DOCUMENT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DOC_TYPE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DOC_VERS;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DOC_FORMAT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DOC_CHG_NO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PAGE_NO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+NO_SHEETS;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_MEMO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PAGEFORMAT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SIZE_DIM;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BASIC_MATL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STD_DESCR;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LAB_DESIGN;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PUR_VALKEY;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+NET_WEIGHT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONTAINER;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STOR_CONDS;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TEMP_CONDS;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TRANS_GRP;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HAZ_MAT_NO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DIVISION;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COMPETITOR;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QTY_GR_GI;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROC_RULE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SUP_SOURCE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEASON;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LABEL_TYPE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LABEL_FORM;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_HIER;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CAD_ID;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ALLOWED_WT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PACK_WT_UN;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PACK_WT_UN_ISO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ALLWD_VOL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PACK_VO_UN;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PACK_VO_UN_ISO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+WT_TOL_LT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VOL_TOL_LT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VAR_ORD_UN;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BATCH_MGMT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SH_MAT_TYP;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FILL_LEVEL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STACK_FACT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAT_GRP_SM;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+AUTH_GROUP;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QM_PROCMNT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CATPROFILE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MINREMLIFE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SHELF_LIFE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STOR_PCT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VALID_FROM;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DELN_DATE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SAESON_YR;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PRICE_BAND;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EMPTIESBOM;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EXTMATLGRP;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONF_MATL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_REF_MAT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PUR_STATUS;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SAL_STATUS;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PVALIDFROM;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SVALIDFROM;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TAX_CLASS;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONT_UNIT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONT_UNIT_ISO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+NET_CONT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COMPPRUNIT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+GROSS_CONT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PRPROFVAR;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QUAL_DIK;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ENVT_RLVT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ALLOC;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEASMATCAT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HAZMATPROF;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HIGH_VISC;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LOOSEORLIQ;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CLOSED_BOX;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+APPD_B_REC;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PERIOD_IND_EXPIRATION_DATE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ROUND_UP_RULE_EXPIRATION_DATE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_COMPOSITION_ON_PACKAGING;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ITEM_CAT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BASIC_MATL_NEW;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MARARTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARARTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARARTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+CONF_MATL_EXTERNAL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONF_MATL_GUID;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONF_MATL_VERSION;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HAZ_MAT_NO_EXTERNAL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HAZ_MAT_NO_GUID;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HAZ_MAT_NO_VERSION;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_REF_MAT_EXTERNAL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_REF_MAT_GUID;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_REF_MAT_VERSION;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PREPACK_GENERIC_MATL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CREATION_STATUS;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FREE_CHAR_VALUE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CARE_CODE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BRAND_ID;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIBER_CODE_1;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIBER_PART_1;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIBER_CODE_2;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIBER_PART_2;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIBER_CODE_3;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIBER_PART_3;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIBER_CODE_4;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIBER_PART_4;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIBER_CODE_5;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIBER_PART_5;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FASHION_GRADE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PACKING_REF_MATL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PREPACK_GENERIC_MATL_EXTERNAL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PREPACK_GENERIC_MATL_VERSION;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PREPACK_GENERIC_MATL_GUID;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PACKING_REF_MATL_EXTERNAL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PACKING_REF_MATL_GUID;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PACKING_REF_MATL_VERSION;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STD_HU_TYPE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PILFERABLE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+WHSE_STORAGE_CONDITION;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+WHSE_MATERIAL_GROUP;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HANDLING_INDICATOR;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HAZ_MAT_RELEVANT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HU_TYPE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VARIABLE_TARE_WEIGHT;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAX_ALLOWED_CAPACITY;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+OVERCAPACITY_TOLERANCE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAX_ALLOWED_LENGTH;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAX_ALLOWED_WIDTH;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAX_ALLOWED_HEIGTH;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAX_DIMENSION_UN;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAX_DIMENSION_UN_ISO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COUNTRYORI;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COUNTRYORI_ISO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATFRGTGRP;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QUARANTINE_PERIOD;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QUARANTINE_PERIOD_UN;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QUARANTINE_PERIOD_UN_ISO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QUALITY_INSP_GRP;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SERIAL_NUMBER_PROFILE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EWM_CW_TOLERANCE_GROUP;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EWM_CW_INPUT_CONTROL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PCKGING_SMARTFORM;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ADJUST_PROFILE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ALLOW_PMAT_IGNO;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ANIMAL_ORIGIN_FLAG;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEGMENTATION_STRUCTURE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEGMENTATION_STRATEGY;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEGMENTATION_STATUS;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FASHION_ATTRIBUTE_1;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FASHION_ATTRIBUTE_2;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FASHION_ATTRIBUTE_3;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEASON_LEVEL;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEASON_FLAG;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEGMENTATION_SCOPE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEGMENTATION_RELEVANCE;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_CONV_ID;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_LONG;E1BPE1MARARTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+OLD_MAT_NO_LONG;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HAZ_MAT_NO_LONG;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONF_MATL_LONG;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_REF_MAT_LONG;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PREPACK_GENERIC_MATL_LONG;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PACKING_REF_MATL_LONG;E1BPE1MARARTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+E1BPE1MARAEXTRT;IDOC;2;0..999999;Complex;;;Transf.dados Retail - dados do cliente a nível de mandante
+FUNCTION;E1BPE1MARAEXTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARAEXTRT;3;0..1;String;;18;Nº do material
+FIELD1;E1BPE1MARAEXTRT;3;0..1;String;;229;Container para dados caractere do comprimento 229
+FIELD2;E1BPE1MARAEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MARAEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MARAEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MARAEXTRT1;E1BPE1MARAEXTRT;3;0..1;Complex;;;Transf.dados Retail - dados do cliente a nível de mandante
+MATERIAL_EXTERNAL;E1BPE1MARAEXTRT1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARAEXTRT1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARAEXTRT1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MARAEXTRT1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MARAEXTRTX;IDOC;2;0..999999;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MARAEXTRT
+FUNCTION;E1BPE1MARAEXTRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARAEXTRTX;3;0..1;String;;18;Nº do material
+FIELD1;E1BPE1MARAEXTRTX;3;0..1;String;;229;Container para dados caractere do comprimento 229
+FIELD2;E1BPE1MARAEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MARAEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MARAEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MARAEXTRTX1;E1BPE1MARAEXTRTX;3;0..1;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MARAEXTRT
+MATERIAL_EXTERNAL;E1BPE1MARAEXTRTX1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARAEXTRTX1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARAEXTRTX1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MARAEXTRTX1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MAW1RT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - ampliação dos dados básicos
+FUNCTION;E1BPE1MAW1RT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MAW1RT;3;0..1;String;;18;Nº do material
+REPL_LIST;E1BPE1MAW1RT;3;0..1;String;;1;Tipo de lista de sortimento
+SERV_AGRT;E1BPE1MAW1RT;3;0..1;String;;2;Estipulação de serviço para um material do comércio
+ABC_ID;E1BPE1MAW1RT;3;0..1;String;;1;Código ABC
+PUR_GROUP;E1BPE1MAW1RT;3;0..1;String;;3;Grupo de compradores
+SALES_UNIT;E1BPE1MAW1RT;3;0..1;String;;3;Unidade de venda
+SALES_UNIT_ISO;E1BPE1MAW1RT;3;0..1;String;;3;Unidade de venda em code ISO
+ISSUE_UNIT;E1BPE1MAW1RT;3;0..1;String;;3;Unidade de medida de saída
+ISSUE_UNIT_ISO;E1BPE1MAW1RT;3;0..1;String;;3;Unidade de medida de saída em code ISO
+COUNTRYORI;E1BPE1MAW1RT;3;0..1;String;;3;País de origem do material (origem CCI)
+COUNTRYORI_ISO;E1BPE1MAW1RT;3;0..1;String;;2;País de origem do material em code ISO
+REGIONORIG;E1BPE1MAW1RT;3;0..1;String;;3;Região de origem do material (origem Câm.Ind.e Comércio)
+LOADINGGRP;E1BPE1MAW1RT;3;0..1;String;;4;Grupo de carregamento
+ASSORT_LEV;E1BPE1MAW1RT;3;0..1;String;;2;Nível de sortimento
+ASSORTPRIO;E1BPE1MAW1RT;3;0..1;String;;1;Prioridade de sortimento ext.
+LI_PROC_ST;E1BPE1MAW1RT;3;0..1;String;;2;Método de listagem para a filial ou outros tipos sortimento
+LI_PROC_DC;E1BPE1MAW1RT;3;0..1;String;;2;Método catalogação p/tps.sortimento do centro distribuição
+LIST_ST_FR;E1BPE1MAW1RT;3;0..1;String;;8;Data a partir da qual se efetua a catalogação na filial
+LIST_ST_TO;E1BPE1MAW1RT;3;0..1;String;;8;Data até à qual é efetuada a catalogação na filial
+LIST_DC_FR;E1BPE1MAW1RT;3;0..1;String;;8;Data a partir da qual é efetuada a catalogação no CD
+LIST_DC_TO;E1BPE1MAW1RT;3;0..1;String;;8;Data até à qual será catalogado no dep.centr./cent.distr.
+SELL_ST_FR;E1BPE1MAW1RT;3;0..1;String;;8;Data a partir da qual se vende na filial
+SELL_ST_TO;E1BPE1MAW1RT;3;0..1;String;;8;Data até à qual se vende na filial
+SELL_DC_FR;E1BPE1MAW1RT;3;0..1;String;;8;Data a partir da qual se vende no centro de distribuição
+SELL_DC_TO;E1BPE1MAW1RT;3;0..1;String;;8;Dta.até a qual se vende no depart.central/centro distrib.
+VAL_CLASS;E1BPE1MAW1RT;3;0..1;String;;4;Classe de avaliação
+COMM_CODE;E1BPE1MAW1RT;3;0..1;String;;17;Código das mercadorias / nº code import.p/comércio exterior
+VAL_MARGIN;E1BPE1MAW1RT;3;0..1;String;;9;Margem de avaliação
+COUPON_PROFILE;E1BPE1MAW1RT;3;0..1;String;;4;Perfil p/a distribuição descontos por cupons na entrada POS
+ASSORTLIST;E1BPE1MAW1RT;3;0..1;String;;1;Catalogação de sortimento ativada
+MATERIAL_EXTERNAL;E1BPE1MAW1RT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MAW1RT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MAW1RT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MAW1RT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MAW1RTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1MAW1RT
+FUNCTION;E1BPE1MAW1RTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MAW1RTX;3;0..1;String;;18;Nº do material
+REPL_LIST;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SERV_AGRT;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ABC_ID;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PUR_GROUP;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SALES_UNIT;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SALES_UNIT_ISO;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ISSUE_UNIT;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ISSUE_UNIT_ISO;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COUNTRYORI;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COUNTRYORI_ISO;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REGIONORIG;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LOADINGGRP;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ASSORT_LEV;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ASSORTPRIO;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LI_PROC_ST;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LI_PROC_DC;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LIST_ST_FR;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LIST_ST_TO;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LIST_DC_FR;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LIST_DC_TO;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SELL_ST_FR;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SELL_ST_TO;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SELL_DC_FR;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SELL_DC_TO;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VAL_CLASS;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COMM_CODE;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VAL_MARGIN;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COUPON_PROFILE;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ASSORTLIST;E1BPE1MAW1RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MAW1RTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MAW1RTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MAW1RTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MAW1RTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MAKTRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - textos breves de material
+FUNCTION;E1BPE1MAKTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MAKTRT;3;0..1;String;;18;Nº do material
+LANGU;E1BPE1MAKTRT;3;0..1;String;;1;Código de idioma
+LANGU_ISO;E1BPE1MAKTRT;3;0..1;String;;2;Código de idiomas SAP de 2 dígitos
+MATL_DESC;E1BPE1MAKTRT;3;0..1;String;;40;Texto breve de material
+MATERIAL_EXTERNAL;E1BPE1MAKTRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MAKTRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MAKTRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MAKTRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MARCRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - dados de material a nível de centro
+FUNCTION;E1BPE1MARCRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARCRT;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MARCRT;3;0..1;String;;4;Centro
+DEL_FLAG;E1BPE1MARCRT;3;0..1;String;;1;Marcar mat.para eliminação a nível de centro
+ABC_ID;E1BPE1MARCRT;3;0..1;String;;1;Código ABC
+CRIT_PART;E1BPE1MARCRT;3;0..1;String;;1;Código: peça crítica
+PUR_GROUP;E1BPE1MARCRT;3;0..1;String;;3;Grupo de compradores
+ISSUE_UNIT;E1BPE1MARCRT;3;0..1;String;;3;Unidade de medida de saída
+ISSUE_UNIT_ISO;E1BPE1MARCRT;3;0..1;String;;3;Unidade de medida de saída em code ISO
+MRPPROFILE;E1BPE1MARCRT;3;0..1;String;;4;Material: perfil de planejamento de necessidades (MRP)
+MRP_TYPE;E1BPE1MARCRT;3;0..1;String;;2;Tipo de MRP
+MRP_CTRLER;E1BPE1MARCRT;3;0..1;String;;3;Planejador MRP
+PLND_DELRY;E1BPE1MARCRT;3;0..1;String;;4;Prazo de entrega previsto em dias
+GR_PR_TIME;E1BPE1MARCRT;3;0..1;String;;4;Tempo de processamento (em dias) da entrada de mercadorias
+PERIOD_IND;E1BPE1MARCRT;3;0..1;String;;1;Código de período
+ASSY_SCRAP;E1BPE1MARCRT;3;0..1;String;;7;Refugo do conjunto em %
+LOTSIZEKEY;E1BPE1MARCRT;3;0..1;String;;2;Chave de cálculo do tamanho do lote no MRP
+PROC_TYPE;E1BPE1MARCRT;3;0..1;String;;1;Tipo de suprimento
+SPPROCTYPE;E1BPE1MARCRT;3;0..1;String;;2;Tipo de suprimento especial
+REORDER_PT;E1BPE1MARCRT;3;0..1;String;;15;Ponto de reabastecimento
+SAFETY_STK;E1BPE1MARCRT;3;0..1;String;;15;Estoque de segurança
+MINLOTSIZE;E1BPE1MARCRT;3;0..1;String;;15;Tamanho mínimo do lote
+MAXLOTSIZE;E1BPE1MARCRT;3;0..1;String;;15;Tamanho máximo do lote
+FIXED_LOT;E1BPE1MARCRT;3;0..1;String;;15;Tamanho fixo do lote
+ROUND_VAL;E1BPE1MARCRT;3;0..1;String;;15;Valor de arredondamento da quantidade pedida
+MAX_STOCK;E1BPE1MARCRT;3;0..1;String;;15;Estoque máximo
+ORD_COSTS;E1BPE1MARCRT;3;0..1;String;;25;Custos fixos por pedido (interfaces BAPI)
+DEP_REQ_ID;E1BPE1MARCRT;3;0..1;String;;1;Código de necs.deps.para necessidade indiv.e coletiva
+STOR_COSTS;E1BPE1MARCRT;3;0..1;String;;1;Código de custos de armazenagem
+ALT_BOM_ID;E1BPE1MARCRT;3;0..1;String;;1;Código para a seleção de listas técnicas alternativas
+DISCONTINU;E1BPE1MARCRT;3;0..1;String;;1;Código de obsolescência
+EFF_O_DAY;E1BPE1MARCRT;3;0..1;String;;8;Data de expiração
+FOLLOW_UP;E1BPE1MARCRT;3;0..1;String;;18;Material subsequente
+GRP_REQMTS;E1BPE1MARCRT;3;0..1;String;;1;Código para agrupamento de necessidades
+MIXED_MRP;E1BPE1MARCRT;3;0..1;String;;1;Código de planejamento de necessidades (MRP) misto
+SM_KEY;E1BPE1MARCRT;3;0..1;String;;3;Chave de prazos para tempos buffer
+BACKFLUSH;E1BPE1MARCRT;3;0..1;String;;1;Código: baixa por explosão
+INHSEPRODT;E1BPE1MARCRT;3;0..1;String;;4;Tempo de produção interna
+STGEPERIOD;E1BPE1MARCRT;3;0..1;String;;6;Período máximo de armazenamento
+STGE_PD_UN;E1BPE1MARCRT;3;0..1;String;;3;Unidade para o período máximo de armazenamento
+STGE_PD_UN_ISO;E1BPE1MARCRT;3;0..1;String;;3;Unidade para o período máximo de armazenamento no código ISO
+REPLENTIME;E1BPE1MARCRT;3;0..1;String;;4;Tempo total de reposição (dias de trabalho)
+REPLACE_PT;E1BPE1MARCRT;3;0..1;String;;1;Peça de reposição
+QUAL_INSP;E1BPE1MARCRT;3;0..1;String;;1;Registro em estoque em controle de qualidade
+CTRL_KEY;E1BPE1MARCRT;3;0..1;String;;8;Chave de controle p/administração qualidade no suprimento
+DOC_REQD;E1BPE1MARCRT;3;0..1;String;;1;Código para documentação obrigatória
+LOADINGGRP;E1BPE1MARCRT;3;0..1;String;;4;Grupo de carregamento
+BATCH_MGMT;E1BPE1MARCRT;3;0..1;String;;1;Código para administração em lote obrigatória
+QUOTAUSAGE;E1BPE1MARCRT;3;0..1;String;;1;Utilização da quotização
+SERV_LEVEL;E1BPE1MARCRT;3;0..1;String;;5;Grau de atendimento
+SPLIT_IND;E1BPE1MARCRT;3;0..1;String;;1;Código de divisão
+AVAILCHECK;E1BPE1MARCRT;3;0..1;String;;2;Grupo de verificação para verificação de disponibilidade
+FY_VARIANT;E1BPE1MARCRT;3;0..1;String;;2;Variante de exercício
+CORR_FACT;E1BPE1MARCRT;3;0..1;String;;1;Código: considerar os fatores de correção
+SETUP_TIME;E1BPE1MARCRT;3;0..1;String;;7;Tempo de preparação da expedição
+BASE_QTY;E1BPE1MARCRT;3;0..1;String;;15;Quantidade básica p/planejamento de capacidades na expedição
+PROC_TIME;E1BPE1MARCRT;3;0..1;String;;7;Tempo de processamento na expedição
+SUP_SOURCE;E1BPE1MARCRT;3;0..1;String;;1;Fonte de suprimento
+AUTO_P_ORD;E1BPE1MARCRT;3;0..1;String;;1;Código: "pedido automático permitido"
+SOURCELIST;E1BPE1MARCRT;3;0..1;String;;1;Código de livro de fornecedores obrigatório
+COMM_CODE;E1BPE1MARCRT;3;0..1;String;;17;Código das mercadorias / nº code import.p/comércio exterior
+COUNTRYORI;E1BPE1MARCRT;3;0..1;String;;3;País de origem do material (origem CCI)
+COUNTRYORI_ISO;E1BPE1MARCRT;3;0..1;String;;2;País de origem do material em code ISO
+REGIONORIG;E1BPE1MARCRT;3;0..1;String;;3;Região de origem do material (origem Câm.Ind.e Comércio)
+EXPIMPGRP;E1BPE1MARCRT;3;0..1;String;;4;Grupo de materiais exportação para comércio exterior
+PROFIT_CTR;E1BPE1MARCRT;3;0..1;String;;10;Centro de lucro
+PPC_PL_CAL;E1BPE1MARCRT;3;0..1;String;;3;Calendário de planejamento PCP
+REP_MANUF;E1BPE1MARCRT;3;0..1;String;;1;Código: produção repetitiva permitida
+PL_TI_FNCE;E1BPE1MARCRT;3;0..1;String;;3;Horizonte de planejamento fixo
+CONSUMMODE;E1BPE1MARCRT;3;0..1;String;;1;Modo de compensação
+BWD_CONS;E1BPE1MARCRT;3;0..1;String;;3;Intervalo de compensação - regressivo -
+FWD_CONS;E1BPE1MARCRT;3;0..1;String;;3;Intervalo de compensação - progressivo -
+ISS_ST_LOC;E1BPE1MARCRT;3;0..1;String;;4;Depósito de produção
+MRP_GROUP;E1BPE1MARCRT;3;0..1;String;;4;Grupo MRP
+COMP_SCRAP;E1BPE1MARCRT;3;0..1;String;;7;Refugo de componentes em %
+CERT_TYPE;E1BPE1MARCRT;3;0..1;String;;4;Categoria de certificado
+CYCLE_TIME;E1BPE1MARCRT;3;0..1;String;;4;Tempo do ciclo de trabalho
+COVPROFILE;E1BPE1MARCRT;3;0..1;String;;3;Perfil de cobertura
+CO_PA_FLD;E1BPE1MARCRT;3;0..1;String;;10;Nome local do campo para ligação CO/PA com SOP
+CC_PH_INV;E1BPE1MARCRT;3;0..1;String;;1;Código de inventário para inventário rotativo
+SERNO_PROF;E1BPE1MARCRT;3;0..1;String;;4;Perfil de nºs série
+REPMANPROF;E1BPE1MARCRT;3;0..1;String;;4;Perfil produção repetitiva
+NEG_STOCKS;E1BPE1MARCRT;3;0..1;String;;1;Estoques negativos admitidos no centro
+QM_RGMTS;E1BPE1MARCRT;3;0..1;String;;4;Sistema QM exigido do fornecedor
+PLNG_CYCLE;E1BPE1MARCRT;3;0..1;String;;3;Ciclo MRP
+ROUND_PROF;E1BPE1MARCRT;3;0..1;String;;4;Perfil de arredondamento
+REFMATCONS;E1BPE1MARCRT;3;0..1;String;;18;Material de referência para consumo
+REFPLTCONS;E1BPE1MARCRT;3;0..1;String;;4;Centro referência - consumo
+D_TO_REF_M;E1BPE1MARCRT;3;0..1;String;;8;Data-até para material referência - consumo
+MULT_REF_M;E1BPE1MARCRT;3;0..1;String;;7;Multiplicador para material referência para consumo
+AUTO_RESET;E1BPE1MARCRT;3;0..1;String;;1;Reinicializar modelo de previsão automaticamente
+EX_CERT_ID;E1BPE1MARCRT;3;0..1;String;;1;Confirmação de isenção de licença: código p/controle legal
+EX_CERT_NO;E1BPE1MARCRT;3;0..1;String;;8;Nº confirmação de isenção licença em exportação/importação
+EX_CERT_DT;E1BPE1MARCRT;3;0..1;String;;8;Confirm.isenção licença: data de emissão da conf.isen.licen.
+MILIT_ID;E1BPE1MARCRT;3;0..1;String;;1;Código: mercadoria militar
+INSP_INT;E1BPE1MARCRT;3;0..1;String;;6;Intervalo até ao próximo controle periódico
+CO_PRODUCT;E1BPE1MARCRT;3;0..1;String;;1;Código: o material pode ser um co-produto
+PLAN_STRGP;E1BPE1MARCRT;3;0..1;String;;2;Grupo de estratégia de planejamento
+SLOC_EXPRC;E1BPE1MARCRT;3;0..1;String;;4;Depósito proposto para suprimento externo
+BULK_MAT;E1BPE1MARCRT;3;0..1;String;;1;Código: material a granel
+CC_FIXED;E1BPE1MARCRT;3;0..1;String;;1;Código CC fixo
+DETERM_GRP;E1BPE1MARCRT;3;0..1;String;;4;Grupo de determinação de estoque
+QM_AUTHGRP;E1BPE1MARCRT;3;0..1;String;;6;Grupo de autorização de material para atividades no QM
+PUR_STATUS;E1BPE1MARCRT;3;0..1;String;;2;Status do material específico do centro
+SAFTY_T_ID;E1BPE1MARCRT;3;0..1;String;;1;Código de margem de segurança (com/sem margem de segurança)
+SAFETYTIME;E1BPE1MARCRT;3;0..1;String;;2;Período de segurança (em dias de trabalho)
+PLORD_CTRL;E1BPE1MARCRT;3;0..1;String;;2;Controle de ações processamento de ordens planejadas
+BATCHENTRY;E1BPE1MARCRT;3;0..1;String;;1;Controle da entrada de lotes na ordem de produção/processo
+PROMSMOOTH;E1BPE1MARCRT;3;0..1;String;;1;Código: nivelar consumo de ação de promoção
+UNIT_GROUP;E1BPE1MARCRT;3;0..1;String;;4;Grupo unidade medida
+PVALIDFROM;E1BPE1MARCRT;3;0..1;String;;8;Data, a partir da qual status mat.espec.centro é válido
+SERV_LEV_R;E1BPE1MARCRT;3;0..1;String;;1;Grau de atendimento SAM
+MATFRGTGRP;E1BPE1MARCRT;3;0..1;String;;8;Grupo de frete de material
+HANDLG_GRP;E1BPE1MARCRT;3;0..1;String;;4;Grupo de cargas para logística para cálculo carga trabalho
+CFOP_CAT;E1BPE1MARCRT;3;0..1;String;;2;Material: categoria CFOP
+EU_LIST_NO;E1BPE1MARCRT;3;0..1;String;;12;Regul.mercado: nº lista de produtos no regulam.mercado (CAP)
+EU_MAT_GRP;E1BPE1MARCRT;3;0..1;String;;6;Regulam.mercado: grp.prod.no regulam.mercado p/com.exterior
+CAS_NO;E1BPE1MARCRT;3;0..1;String;;15;Nº CAS para produtos farmacêuticos no comércio exterior
+CTRL_CODE;E1BPE1MARCRT;3;0..1;String;;16;Código de controle p/imposto seletivo em comércio exterior
+JIT_RELVT;E1BPE1MARCRT;3;0..1;String;;1;Código item relevante para solicitação remessa just in time
+DISTR_PROF;E1BPE1MARCRT;3;0..1;String;;3;Pefil de distribuição do material no centro
+PERIOD_PROFILE_SAFETY_TIME;E1BPE1MARCRT;3;0..1;String;;3;Perfil períod.para períod.segurança
+MRP_RELEVANCY_DEP_REQUIREMENTS;E1BPE1MARCRT;3;0..1;String;;1;Relevância MRP para necessidades dependentes
+AVAIL_CHECK_ALL_PROJ_SEGMENTS;E1BPE1MARCRT;3;0..1;String;;1;Código para o material válido para todos os projetos
+EX_CERT_NO_NEW;E1BPE1MARCRT;3;0..1;String;;8;Conf.isenção licença: nº conf.isenção licença p/cntrl.legal
+PRODUCTION_SCHEDULER;E1BPE1MARCRT;3;0..1;String;;3;Responsável pelo controle de produção
+PROD_PROF;E1BPE1MARCRT;3;0..1;String;;6;Perfil de controle de produção
+MAT_GRP_TRANS;E1BPE1MARCRT;3;0..1;String;;20;Grupo de materiais para a matriz de transição
+OVERALL_PROF;E1BPE1MARCRT;3;0..1;String;;6;Perfil geral para controle de modificações de ordens
+UNDER_TOL;E1BPE1MARCRT;3;0..1;String;;5;Limite de tolerância para fornecimento incompleto
+OVER_TOL;E1BPE1MARCRT;3;0..1;String;;5;Limite de tolerância para fornecimento excessivo
+UNLIMITED;E1BPE1MARCRT;3;0..1;String;;1;Código: fornecimento excessivo permitido sem limites
+SETUP_TIME_PROC;E1BPE1MARCRT;3;0..1;String;;7;Tempos de preparação
+PROCESSING_TIME;E1BPE1MARCRT;3;0..1;String;;7;Tempo de processamento
+BASE_QTY_PROC;E1BPE1MARCRT;3;0..1;String;;15;Quantidade básica
+INTEROP_TIME;E1BPE1MARCRT;3;0..1;String;;7;Tempo de transição
+PROD_UNIT;E1BPE1MARCRT;3;0..1;String;;3;Unidade de medida de produção
+PROD_UNIT_ISO;E1BPE1MARCRT;3;0..1;String;;3;Unidade de medida de produção no código ISO
+VARIANCE_KEY;E1BPE1MARCRT;3;0..1;String;;6;Chave de desvio
+ALTERNATIVE_BOM;E1BPE1MARCRT;3;0..1;String;;2;Lista técnica alternativa
+BOM_USAGE;E1BPE1MARCRT;3;0..1;String;;1;Utilização da lista técnica
+TASK_LIST_GRP_NO;E1BPE1MARCRT;3;0..1;String;;8;Chave do grupo de listas de tarefas
+GROUP_COUNTER;E1BPE1MARCRT;3;0..1;String;;2;Numerador de grupos
+TASK_LIST_TYPE;E1BPE1MARCRT;3;0..1;String;;1;Tipo de roteiro
+SPEC_PROC_TYPE;E1BPE1MARCRT;3;0..1;String;;2;Aprovisionamento especial para cálculo de custos
+LOT_SIZE;E1BPE1MARCRT;3;0..1;String;;15;Tamanho de lote do cálculo de custos do produto
+MIN_SAFETY_STK;E1BPE1MARCRT;3;0..1;String;;15;Estoque de segurança mínimo
+NO_COSTING;E1BPE1MARCRT;3;0..1;String;;1;Não calcular custos
+FOLLOW_UP_EXTERNAL;E1BPE1MARCRT;3;0..1;String;;40;Nº de material longo para o campo FOLLOW_UP
+FOLLOW_UP_GUID;E1BPE1MARCRT;3;0..1;String;;32;GUID externo para campo FOLLOW_UP
+FOLLOW_UP_VERSION;E1BPE1MARCRT;3;0..1;String;;10;Nº de versão para campo FOLLOW_UP
+MATERIAL_EXTERNAL;E1BPE1MARCRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARCRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARCRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+REFMATCONS_EXTERNAL;E1BPE1MARCRT;3;0..1;String;;40;Nº de material longo para o campo REFMATCONS
+REFMATCONS_GUID;E1BPE1MARCRT;3;0..1;String;;32;ID único externo para o campo REFMATCONS
+REFMATCONS_VERSION;E1BPE1MARCRT;3;0..1;String;;10;Nº da versão para o campo REFMATCONS
+E1BPE1MARCRT1;E1BPE1MARCRT;3;0..1;Complex;;;Transf.dados varejo - dados de material a nível de centro
+PROPSUPPLYAREA;E1BPE1MARCRT1;4;0..1;String;;10;SupM proposto no mestre de material
+CONSIGNMENT_CONTROL;E1BPE1MARCRT1;4;0..1;String;;1;Controle do estoque em consignação
+GI_PR_TIME;E1BPE1MARCRT1;4;0..1;String;;4;Tempo de processamento da saída de mercadorias em dias
+PURCH_ACROSS_PUR_GROUP;E1BPE1MARCRT1;4;0..1;String;;1;Suprimento possível para vários grupos de compradores
+REF_DETERM_SCHEMA;E1BPE1MARCRT1;4;0..1;String;;2;Esquema de determinação de referência
+MIN_TROC;E1BPE1MARCRT1;4;0..1;String;;3;Cobertura mínima planejada
+MAX_TROC;E1BPE1MARCRT1;4;0..1;String;;3;Cobertura máxima planejada
+TARGET_STOCK;E1BPE1MARCRT1;4;0..1;String;;15;Estoque teórico
+SEGMENTATION_STRATEGY;E1BPE1MARCRT1;4;0..1;String;;8;Estratégia de segmentação
+SEGMENTATION_STATUS;E1BPE1MARCRT1;4;0..1;String;;1;Status de segmentação
+SEGMENTATION_SCOPE;E1BPE1MARCRT1;4;0..1;String;;1;Escopo da estratégia de segmentação
+CHECK_METHOD;E1BPE1MARCRT1;4;0..1;String;;1;Ordenar estoque com base no segmento
+CONSUMPTION_PRIORITY;E1BPE1MARCRT1;4;0..1;String;;1;Prioridade de compensação
+DISCRETE_BATCH_FLAG;E1BPE1MARCRT1;4;0..1;String;;1;Número de lote discreto
+ORDER_ALLOCATION_REQ;E1BPE1MARCRT1;4;0..1;String;;1;Execução de alocação de ordem
+STOCK_PROTECTION_IND;E1BPE1MARCRT1;4;0..1;String;;1;Código de proteção de estoque
+SEASON_FLAG;E1BPE1MARCRT1;4;0..1;String;;1;Código: época ativa na aministração estoques
+DEFAULT_STOCK_SEGMENT;E1BPE1MARCRT1;4;0..1;String;;16;Valor de segmento de estoque padrão
+SORT_STOCK_BASED_ON_SEGMENT;E1BPE1MARCRT1;4;0..1;String;;1;Ordenar estoque com base no segmento
+VARIANT_GROUP;E1BPE1MARCRT1;4;0..1;String;;2;Grupo de variantes
+BATCH_ASSIGNMENT;E1BPE1MARCRT1;4;0..1;String;;1;Código: atribuição de lote durante conversão OT em OT
+ATP_MRP_STATUS;E1BPE1MARCRT1;4;0..1;String;;2;Status ATP/MRP para material e segmento
+SEGMENTATION_VALIDFROM;E1BPE1MARCRT1;4;0..1;String;;8;Data a partir da qual status material espec.centro é válida
+MATERIAL_LONG;E1BPE1MARCRT1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+FOLLOW_UP_LONG;E1BPE1MARCRT1;4;0..1;String;;40;Material subsequente
+REFMATCONS_LONG;E1BPE1MARCRT1;4;0..1;String;;40;Material de referência de consumo
+CALENDAR_GROUP;E1BPE1MARCRT1;4;0..1;String;;4;Grupo de calendários
+DEF_SEG_LONG;E1BPE1MARCRT1;4;0..1;String;;40;Valor de segmento de estoque padrão
+E1BPE1MARCRTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1MARCRT
+FUNCTION;E1BPE1MARCRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARCRTX;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MARCRTX;3;0..1;String;;4;Centro
+DEL_FLAG;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ABC_ID;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CRIT_PART;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PUR_GROUP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ISSUE_UNIT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ISSUE_UNIT_ISO;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MRPPROFILE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MRP_TYPE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MRP_CTRLER;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLND_DELRY;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+GR_PR_TIME;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PERIOD_IND;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ASSY_SCRAP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LOTSIZEKEY;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROC_TYPE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SPPROCTYPE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REORDER_PT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SAFETY_STK;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MINLOTSIZE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAXLOTSIZE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIXED_LOT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ROUND_VAL;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAX_STOCK;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ORD_COSTS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DEP_REQ_ID;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STOR_COSTS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ALT_BOM_ID;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DISCONTINU;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EFF_O_DAY;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FOLLOW_UP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+GRP_REQMTS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MIXED_MRP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SM_KEY;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BACKFLUSH;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+INHSEPRODT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STGEPERIOD;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STGE_PD_UN;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STGE_PD_UN_ISO;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REPLENTIME;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REPLACE_PT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QUAL_INSP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CTRL_KEY;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DOC_REQD;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LOADINGGRP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BATCH_MGMT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QUOTAUSAGE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SERV_LEVEL;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SPLIT_IND;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+AVAILCHECK;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FY_VARIANT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CORR_FACT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SETUP_TIME;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BASE_QTY;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROC_TIME;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SUP_SOURCE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+AUTO_P_ORD;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SOURCELIST;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COMM_CODE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COUNTRYORI;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COUNTRYORI_ISO;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REGIONORIG;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EXPIMPGRP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROFIT_CTR;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PPC_PL_CAL;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REP_MANUF;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PL_TI_FNCE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONSUMMODE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BWD_CONS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FWD_CONS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ISS_ST_LOC;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MRP_GROUP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COMP_SCRAP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CERT_TYPE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CYCLE_TIME;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COVPROFILE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CO_PA_FLD;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CC_PH_INV;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SERNO_PROF;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REPMANPROF;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+NEG_STOCKS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QM_RGMTS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLNG_CYCLE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ROUND_PROF;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REFMATCONS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REFPLTCONS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+D_TO_REF_M;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MULT_REF_M;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+AUTO_RESET;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EX_CERT_ID;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EX_CERT_NO;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EX_CERT_DT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MILIT_ID;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+INSP_INT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CO_PRODUCT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLAN_STRGP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SLOC_EXPRC;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BULK_MAT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CC_FIXED;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DETERM_GRP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+QM_AUTHGRP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PUR_STATUS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SAFTY_T_ID;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SAFETYTIME;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLORD_CTRL;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BATCHENTRY;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROMSMOOTH;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNIT_GROUP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PVALIDFROM;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SERV_LEV_R;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATFRGTGRP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HANDLG_GRP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CFOP_CAT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EU_LIST_NO;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EU_MAT_GRP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CAS_NO;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CTRL_CODE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+JIT_RELVT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DISTR_PROF;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PERIOD_PROFILE_SAFETY_TIME;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MRP_RELEVANCY_DEP_REQUIREMENTS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+AVAIL_CHECK_ALL_PROJ_SEGMENTS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EX_CERT_NO_NEW;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PRODUCTION_SCHEDULER;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_PROF;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAT_GRP_TRANS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+OVERALL_PROF;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNDER_TOL;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+OVER_TOL;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNLIMITED;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SETUP_TIME_PROC;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROCESSING_TIME;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BASE_QTY_PROC;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+INTEROP_TIME;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_UNIT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_UNIT_ISO;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VARIANCE_KEY;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ALTERNATIVE_BOM;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BOM_USAGE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TASK_LIST_GRP_NO;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+GROUP_COUNTER;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TASK_LIST_TYPE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SPEC_PROC_TYPE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LOT_SIZE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MIN_SAFETY_STK;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+NO_COSTING;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MARCRTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARCRTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARCRTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+FOLLOW_UP_EXTERNAL;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FOLLOW_UP_GUID;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FOLLOW_UP_VERSION;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REFMATCONS_EXTERNAL;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REFMATCONS_GUID;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REFMATCONS_VERSION;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROPSUPPLYAREA;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONSIGNMENT_CONTROL;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+GI_PR_TIME;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PURCH_ACROSS_PUR_GROUP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REF_DETERM_SCHEMA;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MIN_TROC;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAX_TROC;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TARGET_STOCK;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEGMENTATION_STRATEGY;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEGMENTATION_STATUS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEGMENTATION_SCOPE;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CHECK_METHOD;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONSUMPTION_PRIORITY;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DISCRETE_BATCH_FLAG;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ORDER_ALLOCATION_REQ;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STOCK_PROTECTION_IND;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEASON_FLAG;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DEFAULT_STOCK_SEGMENT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SORT_STOCK_BASED_ON_SEGMENT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VARIANT_GROUP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BATCH_ASSIGNMENT;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ATP_MRP_STATUS;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEGMENTATION_VALIDFROM;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_LONG;E1BPE1MARCRTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+FOLLOW_UP_LONG;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REFMATCONS_LONG;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CALENDAR_GROUP;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DEF_SEG_LONG;E1BPE1MARCRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+E1BPE1MARCEXTRT;IDOC;2;0..999999;Complex;;;Transf.dados Retail - dados do cliente a nível de centro
+FUNCTION;E1BPE1MARCEXTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARCEXTRT;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MARCEXTRT;3;0..1;String;;4;Centro
+FIELD1;E1BPE1MARCEXTRT;3;0..1;String;;225;Container para dados caractere do comprimento 225
+FIELD2;E1BPE1MARCEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MARCEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MARCEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MARCEXTRT1;E1BPE1MARCEXTRT;3;0..1;Complex;;;Transf.dados Retail - dados do cliente a nível de centro
+MATERIAL_EXTERNAL;E1BPE1MARCEXTRT1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARCEXTRT1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARCEXTRT1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MARCEXTRT1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MARCEXTRTX;IDOC;2;0..999999;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MARCEXTRT
+FUNCTION;E1BPE1MARCEXTRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARCEXTRTX;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MARCEXTRTX;3;0..1;String;;4;Centro
+FIELD1;E1BPE1MARCEXTRTX;3;0..1;String;;225;Container para dados caractere do comprimento 225
+FIELD2;E1BPE1MARCEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MARCEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MARCEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MARCEXTRTX1;E1BPE1MARCEXTRTX;3;0..1;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MARCEXTRT
+MATERIAL_EXTERNAL;E1BPE1MARCEXTRTX1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARCEXTRTX1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARCEXTRTX1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MARCEXTRTX1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MPOPRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - parâmetros de previsão
+FUNCTION;E1BPE1MPOPRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MPOPRT;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MPOPRT;3;0..1;String;;4;Centro
+FORE_PROF;E1BPE1MPOPRT;3;0..1;String;;4;Perfil de previsão
+MODEL_SI;E1BPE1MPOPRT;3;0..1;String;;1;Código de seleção de modelo
+MODEL_SP;E1BPE1MPOPRT;3;0..1;String;;1;Processo de seleção de modelo
+PARAM_OPT;E1BPE1MPOPRT;3;0..1;String;;1;Código para otimização de parâmetros
+OPTIM_LEV;E1BPE1MPOPRT;3;0..1;String;;1;Nível de otimização
+INITIALIZE;E1BPE1MPOPRT;3;0..1;String;;1;Código de inicialização
+FORE_MODEL;E1BPE1MPOPRT;3;0..1;String;;1;Modelo de previsão
+ALPHA_FACT;E1BPE1MPOPRT;3;0..1;String;;5;Fator alfa (alisamento do valor básico)
+BETA_FACT;E1BPE1MPOPRT;3;0..1;String;;5;Fator beta (amortecimento do valor de tendência)
+GAMMA_FACT;E1BPE1MPOPRT;3;0..1;String;;5;Fator gama (amortecimento de índice sazonal)
+DELTA_FACT;E1BPE1MPOPRT;3;0..1;String;;5;Fator delta (amortecimento desvio médio absoluto)
+TRACKLIMIT;E1BPE1MPOPRT;3;0..1;String;;7;Limiar de aviso
+FORE_DATE;E1BPE1MPOPRT;3;0..1;String;;8;Data da última previsão
+HIST_VALS;E1BPE1MPOPRT;3;0..1;String;;4;Núm.dos períodos históricos
+INIT_PDS;E1BPE1MPOPRT;3;0..1;String;;4;Nº de períodos para inicialização
+SEASON_PDS;E1BPE1MPOPRT;3;0..1;String;;4;Nº de períodos por ciclo sazonal
+EXPOST_PDS;E1BPE1MPOPRT;3;0..1;String;;4;Nº períodos para previsão ex-post
+FORE_PDS;E1BPE1MPOPRT;3;0..1;String;;4;Nº de períodos de previsão
+FIXED_PDS;E1BPE1MPOPRT;3;0..1;String;;4;Períodos fixos
+WTG_GROUP;E1BPE1MPOPRT;3;0..1;String;;2;Grupo de ponderação
+MATERIAL_EXTERNAL;E1BPE1MPOPRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MPOPRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MPOPRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MPOPRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MPOPRTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - parâmetros de previsão
+FUNCTION;E1BPE1MPOPRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MPOPRTX;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MPOPRTX;3;0..1;String;;4;Centro
+FORE_PROF;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MODEL_SI;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MODEL_SP;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PARAM_OPT;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+OPTIM_LEV;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+INITIALIZE;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FORE_MODEL;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ALPHA_FACT;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BETA_FACT;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+GAMMA_FACT;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DELTA_FACT;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TRACKLIMIT;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FORE_DATE;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HIST_VALS;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+INIT_PDS;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SEASON_PDS;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EXPOST_PDS;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FORE_PDS;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FIXED_PDS;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+WTG_GROUP;E1BPE1MPOPRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MPOPRTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MPOPRTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MPOPRTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MPOPRTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MPRWRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - valores de previsão
+FUNCTION;E1BPE1MPRWRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MPRWRT;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MPRWRT;3;0..1;String;;4;Centro
+FIRST_DAY;E1BPE1MPRWRT;3;0..1;String;;8;Primeiro dia do período ao qual se referem os valores
+FORE_VALUE;E1BPE1MPRWRT;3;0..1;String;;15;Valor de previsão
+CORR_VALUE;E1BPE1MPRWRT;3;0..1;String;;15;Valor corrigido p/valor de previsão
+SEAS_INDEX;E1BPE1MPRWRT;3;0..1;String;;7;Índice sazonal
+CVALUE_FXD;E1BPE1MPRWRT;3;0..1;String;;1;Código: valor de previsão fixado
+EXPOST_VAL;E1BPE1MPRWRT;3;0..1;String;;15;Valor de previsão 'ex post'
+VAL_RATIO;E1BPE1MPRWRT;3;0..1;String;;7;Relação valor original : valor corrigido
+MATERIAL_EXTERNAL;E1BPE1MPRWRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MPRWRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MPRWRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MPRWRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MVEGRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - consumos totais
+FUNCTION;E1BPE1MVEGRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MVEGRT;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MVEGRT;3;0..1;String;;4;Centro
+FIRST_DAY;E1BPE1MVEGRT;3;0..1;String;;8;Primeiro dia do período ao qual se referem os valores
+CONS_VALUE;E1BPE1MVEGRT;3;0..1;String;;15;Valor de consumo
+CORR_VALUE;E1BPE1MVEGRT;3;0..1;String;;15;Valor de consumo corrigido
+VAL_RATIO;E1BPE1MVEGRT;3;0..1;String;;7;Relação valor original : valor corrigido
+MATERIAL_EXTERNAL;E1BPE1MVEGRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MVEGRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MVEGRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MVEGRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MVEURT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - consumos não planejados
+FUNCTION;E1BPE1MVEURT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MVEURT;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MVEURT;3;0..1;String;;4;Centro
+FIRST_DAY;E1BPE1MVEURT;3;0..1;String;;8;Primeiro dia do período ao qual se referem os valores
+CONS_VALUE;E1BPE1MVEURT;3;0..1;String;;15;Valor de consumo
+CORR_VALUE;E1BPE1MVEURT;3;0..1;String;;15;Valor de consumo corrigido
+VAL_RATIO;E1BPE1MVEURT;3;0..1;String;;7;Relação valor original : valor corrigido
+MATERIAL_EXTERNAL;E1BPE1MVEURT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MVEURT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MVEURT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MVEURT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MPGDRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - dados de planejamento preliminar
+FUNCTION;E1BPE1MPGDRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MPGDRT;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MPGDRT;3;0..1;String;;4;Centro
+PLNG_MATL;E1BPE1MPGDRT;3;0..1;String;;18;Material planejado
+PLNG_PLANT;E1BPE1MPGDRT;3;0..1;String;;4;Centro de planejamento
+CONVFACTOR;E1BPE1MPGDRT;3;0..1;String;;10;Fator conversão p/UM base de material planejamento prelim.
+MATERIAL_EXTERNAL;E1BPE1MPGDRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MPGDRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MPGDRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+PLNG_MATL_EXTERNAL;E1BPE1MPGDRT;3;0..1;String;;40;Nº de material longo para o campo PLNG_MATL
+PLNG_MATL_GUID;E1BPE1MPGDRT;3;0..1;String;;32;GUID externo para campo PLNG_MATL
+PLNG_MATL_VERSION;E1BPE1MPGDRT;3;0..1;String;;10;Nº de versão para campo PLNG_MATL
+MATERIAL_LONG;E1BPE1MPGDRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+PLNG_MATL_LONG;E1BPE1MPGDRT;3;0..1;String;;40;Material planejado
+E1BPE1MPGDRTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1MPGDRT
+FUNCTION;E1BPE1MPGDRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MPGDRTX;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MPGDRTX;3;0..1;String;;4;Centro
+PLNG_MATL;E1BPE1MPGDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLNG_PLANT;E1BPE1MPGDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CONVFACTOR;E1BPE1MPGDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MPGDRTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MPGDRTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MPGDRTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+PLNG_MATL_EXTERNAL;E1BPE1MPGDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLNG_MATL_GUID;E1BPE1MPGDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLNG_MATL_VERSION;E1BPE1MPGDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_LONG;E1BPE1MPGDRTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+PLNG_MATL_LONG;E1BPE1MPGDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+E1BPE1MARDRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - dados de material a nível de depósito
+FUNCTION;E1BPE1MARDRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARDRT;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MARDRT;3;0..1;String;;4;Centro
+STGE_LOC;E1BPE1MARDRT;3;0..1;String;;4;Depósito
+DEL_FLAG;E1BPE1MARDRT;3;0..1;String;;1;Marcar mat.para eliminação a nível de depósito
+MRP_IND;E1BPE1MARDRT;3;0..1;String;;1;Código MRP depósito
+SPEC_PROC;E1BPE1MARDRT;3;0..1;String;;2;Tipo de suprimento especial: depósito
+REORDER_PT;E1BPE1MARDRT;3;0..1;String;;15;Ponto de reabastecimento para planejamento de depósito
+REPL_QTY;E1BPE1MARDRT;3;0..1;String;;15;Quantidade de reposição para MRP depósito
+STGE_BIN;E1BPE1MARDRT;3;0..1;String;;10;Posição no depósito
+PICKG_AREA;E1BPE1MARDRT;3;0..1;String;;3;Área de picking para lean WM
+MATERIAL_EXTERNAL;E1BPE1MARDRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARDRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARDRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MARDRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MARDRTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1MARDRT
+FUNCTION;E1BPE1MARDRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARDRTX;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MARDRTX;3;0..1;String;;4;Centro
+STGE_LOC;E1BPE1MARDRTX;3;0..1;String;;4;Depósito
+DEL_FLAG;E1BPE1MARDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MRP_IND;E1BPE1MARDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SPEC_PROC;E1BPE1MARDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REORDER_PT;E1BPE1MARDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REPL_QTY;E1BPE1MARDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STGE_BIN;E1BPE1MARDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PICKG_AREA;E1BPE1MARDRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MARDRTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARDRTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARDRTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MARDRTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MARDEXTRT;IDOC;2;0..999999;Complex;;;Transf.dados Retail - dados do cliente a nível de depósito
+FUNCTION;E1BPE1MARDEXTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARDEXTRT;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MARDEXTRT;3;0..1;String;;4;Centro
+STGE_LOC;E1BPE1MARDEXTRT;3;0..1;String;;4;Depósito
+FIELD1;E1BPE1MARDEXTRT;3;0..1;String;;221;Container para dados caractere do comprimento 221
+FIELD2;E1BPE1MARDEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MARDEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MARDEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MARDEXTRT1;E1BPE1MARDEXTRT;3;0..1;Complex;;;Transf.dados Retail - dados do cliente a nível de depósito
+MATERIAL_EXTERNAL;E1BPE1MARDEXTRT1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARDEXTRT1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARDEXTRT1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MARDEXTRT1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MARDEXTRTX;IDOC;2;0..999999;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MARDEXTRT
+FUNCTION;E1BPE1MARDEXTRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARDEXTRTX;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1MARDEXTRTX;3;0..1;String;;4;Centro
+STGE_LOC;E1BPE1MARDEXTRTX;3;0..1;String;;4;Depósito
+FIELD1;E1BPE1MARDEXTRTX;3;0..1;String;;221;Container para dados caractere do comprimento 221
+FIELD2;E1BPE1MARDEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MARDEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MARDEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MARDEXTRTX1;E1BPE1MARDEXTRTX;3;0..1;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MARDEXTRT
+MATERIAL_EXTERNAL;E1BPE1MARDEXTRTX1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARDEXTRTX1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARDEXTRTX1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MARDEXTRTX1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MARMRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - unidades de medida
+FUNCTION;E1BPE1MARMRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARMRT;3;0..1;String;;18;Nº do material
+ALT_UNIT;E1BPE1MARMRT;3;0..1;String;;3;Unidade medida alternativa p/unid.gestão estoque
+ALT_UNIT_ISO;E1BPE1MARMRT;3;0..1;String;;3;UM alternativa para a unidade gestão de estoque em code ISO
+NUMERATOR;E1BPE1MARMRT;3;0..1;String;;6;Contador para a conversão em UMs básicas
+DENOMINATR;E1BPE1MARMRT;3;0..1;String;;6;Denominador para a conversão em unidades de medida básicas
+EAN_UPC;E1BPE1MARMRT;3;0..1;String;;18;Nº europeu do artigo (EAN)
+EAN_CAT;E1BPE1MARMRT;3;0..1;String;;2;Ctg.de número do nº europeu do artigo
+LENGTH;E1BPE1MARMRT;3;0..1;String;;15;Comprimento
+WIDTH;E1BPE1MARMRT;3;0..1;String;;15;Largura
+HEIGHT;E1BPE1MARMRT;3;0..1;String;;15;Altura
+UNIT_DIM;E1BPE1MARMRT;3;0..1;String;;3;Unidade para comprimento/largura/altura
+UNIT_DIM_ISO;E1BPE1MARMRT;3;0..1;String;;3;Inidade para comprimento/largura/altura no code ISO
+VOLUME;E1BPE1MARMRT;3;0..1;String;;15;Volume
+VOLUMEUNIT;E1BPE1MARMRT;3;0..1;String;;3;Unidade de volume
+VOLUMEUNIT_ISO;E1BPE1MARMRT;3;0..1;String;;3;Unidade de volume no code ISO
+GROSS_WT;E1BPE1MARMRT;3;0..1;String;;15;Peso bruto
+UNIT_OF_WT;E1BPE1MARMRT;3;0..1;String;;3;Unidade de peso
+UNIT_OF_WT_ISO;E1BPE1MARMRT;3;0..1;String;;3;Unidade de peso no código ISO
+UNIT;E1BPE1MARMRT;3;0..1;String;;3;Unidade de medida para a exibição
+UNIT_ISO;E1BPE1MARMRT;3;0..1;String;;3;Unidade de medida para a exibição
+SUB_UOM;E1BPE1MARMRT;3;0..1;String;;3;Unidade de medida inferior em uma hierarquia de embalagem
+SUB_UOM_ISO;E1BPE1MARMRT;3;0..1;String;;3;Unidade de medida inferior em código ISO
+MATERIAL_EXTERNAL;E1BPE1MARMRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARMRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARMRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+NESTING_FACTOR;E1BPE1MARMRT;3;0..1;String;;4;Volume restante após aninhamento (em %)
+MAXIMUM_STACKING;E1BPE1MARMRT;3;0..1;String;;3;Fator de empilhamento máximo
+CAPACITY_USAGE;E1BPE1MARMRT;3;0..1;String;;17;Consumo da capacidade
+EWM_CW_UOM_TYPE;E1BPE1MARMRT;3;0..1;String;;1;EWM-CW: categoria da unidade de medida
+MATERIAL_LONG;E1BPE1MARMRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MARMRTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1MARMRT
+FUNCTION;E1BPE1MARMRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MARMRTX;3;0..1;String;;18;Nº do material
+ALT_UNIT;E1BPE1MARMRTX;3;0..1;String;;3;Unidade medida alternativa p/unid.gestão estoque
+ALT_UNIT_ISO;E1BPE1MARMRTX;3;0..1;String;;3;UM alternativa para a unidade gestão de estoque em code ISO
+NUMERATOR;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DENOMINATR;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EAN_UPC;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EAN_CAT;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LENGTH;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+WIDTH;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+HEIGHT;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNIT_DIM;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNIT_DIM_ISO;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VOLUME;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VOLUMEUNIT;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VOLUMEUNIT_ISO;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+GROSS_WT;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNIT_OF_WT;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNIT_OF_WT_ISO;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SUB_UOM;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SUB_UOM_ISO;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MARMRTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MARMRTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MARMRTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+NESTING_FACTOR;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAXIMUM_STACKING;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CAPACITY_USAGE;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EWM_CW_UOM_TYPE;E1BPE1MARMRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_LONG;E1BPE1MARMRTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MAMTRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - textos de material dependentes da UM
+FUNCTION;E1BPE1MAMTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MAMTRT;3;0..1;String;;18;Nº do material
+LANGU;E1BPE1MAMTRT;3;0..1;String;;1;Código de idioma
+LANGU_ISO;E1BPE1MAMTRT;3;0..1;String;;2;Código de idiomas SAP de 2 dígitos
+ALT_UNIT;E1BPE1MAMTRT;3;0..1;String;;3;Unidade medida alternativa p/unid.gestão estoque
+ALT_UNIT_ISO;E1BPE1MAMTRT;3;0..1;String;;3;UM alternativa para a unidade gestão de estoque em code ISO
+TEXT_ID;E1BPE1MAMTRT;3;0..1;String;;2;Mestre material: ID texto breve por unidade de medida
+CONSEC_NO;E1BPE1MAMTRT;3;0..1;String;;2;Nº sequencial para MAMT (2 caracteres)
+MATL_DESCR;E1BPE1MAMTRT;3;0..1;String;;40;Texto breve material para unidade de medida
+MATERIAL_EXTERNAL;E1BPE1MAMTRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MAMTRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MAMTRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MAMTRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MEANRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - nº europeu do artigo (EAN)
+FUNCTION;E1BPE1MEANRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MEANRT;3;0..1;String;;18;Nº do material
+UNIT;E1BPE1MEANRT;3;0..1;String;;3;Unidade de medida para a exibição
+UNIT_ISO;E1BPE1MEANRT;3;0..1;String;;3;Unidade de medida para a exibição
+EAN_UPC;E1BPE1MEANRT;3;0..1;String;;18;Nº europeu do artigo (EAN)
+EAN_CAT;E1BPE1MEANRT;3;0..1;String;;2;Ctg.de número do nº europeu do artigo
+MATERIAL_EXTERNAL;E1BPE1MEANRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MEANRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MEANRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+SEGMENT;E1BPE1MEANRT;3;0..1;String;;16;Valor de segmentação
+MATERIAL_LONG;E1BPE1MEANRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+SEG_LONG;E1BPE1MEANRT;3;0..1;String;;40;Valor de segmentação
+E1BPE1MLEART;IDOC;2;0..999999;Complex;;;Transf.dados varejo - EANs específicos do fornecedor
+FUNCTION;E1BPE1MLEART;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MLEART;3;0..1;String;;18;Nº do material
+UNIT;E1BPE1MLEART;3;0..1;String;;3;Unidade de medida para a exibição
+UNIT_ISO;E1BPE1MLEART;3;0..1;String;;3;Unidade de medida para a exibição
+VENDOR_NO;E1BPE1MLEART;3;0..1;String;;10;Nº conta do fornecedor
+EAN_UPC;E1BPE1MLEART;3;0..1;String;;18;Nº europeu do artigo (EAN)
+MAIN_EAN;E1BPE1MLEART;3;0..1;String;;1;Código: EAN principal do fornecedor
+VEND_MAT;E1BPE1MLEART;3;0..1;String;;35;Nº material atribuído pelo fornecedor
+MATERIAL_EXTERNAL;E1BPE1MLEART;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLEART;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLEART;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLEART;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MALGRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - módulos de layout
+FUNCTION;E1BPE1MALGRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MALGRT;3;0..1;String;;18;Nº do material
+UNIT;E1BPE1MALGRT;3;0..1;String;;3;Unidade de medida para a exibição
+UNIT_ISO;E1BPE1MALGRT;3;0..1;String;;3;Unidade de medida para a exibição
+LAYOUT_MOD;E1BPE1MALGRT;3;0..1;String;;10;Módulo layout
+SORT_SEQ;E1BPE1MALGRT;3;0..1;String;;10;Nº sequência de ordenação em módulo de layout 1
+MAIN_LMOD;E1BPE1MALGRT;3;0..1;String;;1;Código: módulo de layout principal
+FACING;E1BPE1MALGRT;3;0..1;String;;15;Nº de materiais colocados um ao lado do outro
+SHELF_BOARD_NUMBER;E1BPE1MALGRT;3;0..1;String;;10;Seção da prateleira
+FRONT;E1BPE1MALGRT;3;0..1;String;;15;Núm.materiais posicionados um acima do outro
+SHELF_QUANTITY_MAX;E1BPE1MALGRT;3;0..1;String;;15;Qtd.máxima de prateleira
+SHELF_QUANTITY_OPT;E1BPE1MALGRT;3;0..1;String;;15;Quantidade de prateleira ótima
+PRES_QNT;E1BPE1MALGRT;3;0..1;String;;15;Qtd.apresentação
+LAYMOD_VER;E1BPE1MALGRT;3;0..1;String;;4;Versão de um módulo layout
+MATERIAL_EXTERNAL;E1BPE1MALGRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MALGRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MALGRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+LAYMOD_VAR;E1BPE1MALGRT;3;0..1;String;;4;Variante para a versão do módulo layout
+EXCLUSION;E1BPE1MALGRT;3;0..1;String;;1;Flag de exclusão
+MATERIAL_LONG;E1BPE1MALGRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MALGRTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1MALGRT
+FUNCTION;E1BPE1MALGRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MALGRTX;3;0..1;String;;18;Nº do material
+UNIT;E1BPE1MALGRTX;3;0..1;String;;3;Unidade de medida para a exibição
+UNIT_ISO;E1BPE1MALGRTX;3;0..1;String;;3;Unidade de medida para a exibição
+LAYOUT_MOD;E1BPE1MALGRTX;3;0..1;String;;10;Módulo layout
+SORT_SEQ;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAIN_LMOD;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FACING;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SHELF_BOARD_NUMBER;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FRONT;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SHELF_QUANTITY_MAX;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SHELF_QUANTITY_OPT;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PRES_QNT;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LAYMOD_VER;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MALGRTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MALGRTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MALGRTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+LAYMOD_VAR;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+EXCLUSION;E1BPE1MALGRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_LONG;E1BPE1MALGRTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MLANRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - dados de controle
+FUNCTION;E1BPE1MLANRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MLANRT;3;0..1;String;;18;Nº do material
+DEPCOUNTRY;E1BPE1MLANRT;3;0..1;String;;3;País fornecedor (país onde a mercadoria é expedida)
+DEPCOUNTRY_ISO;E1BPE1MLANRT;3;0..1;String;;2;País fornecedor em code ISO
+TAX_TYPE_1;E1BPE1MLANRT;3;0..1;String;;4;Ctg.imposto (sales tax, federal sales tax,...)
+TAXCLASS_1;E1BPE1MLANRT;3;0..1;String;;1;Classificação fiscal do material
+TAX_TYPE_2;E1BPE1MLANRT;3;0..1;String;;4;Ctg.imposto (sales tax, federal sales tax,...)
+TAXCLASS_2;E1BPE1MLANRT;3;0..1;String;;1;Classificação fiscal do material
+TAX_TYPE_3;E1BPE1MLANRT;3;0..1;String;;4;Ctg.imposto (sales tax, federal sales tax,...)
+TAXCLASS_3;E1BPE1MLANRT;3;0..1;String;;1;Classificação fiscal do material
+TAX_TYPE_4;E1BPE1MLANRT;3;0..1;String;;4;Ctg.imposto (sales tax, federal sales tax,...)
+TAXCLASS_4;E1BPE1MLANRT;3;0..1;String;;1;Classificação fiscal do material
+TAX_TYPE_5;E1BPE1MLANRT;3;0..1;String;;4;Ctg.imposto (sales tax, federal sales tax,...)
+TAXCLASS_5;E1BPE1MLANRT;3;0..1;String;;1;Classificação fiscal do material
+TAX_TYPE_6;E1BPE1MLANRT;3;0..1;String;;4;Ctg.imposto (sales tax, federal sales tax,...)
+TAXCLASS_6;E1BPE1MLANRT;3;0..1;String;;1;Classificação fiscal do material
+TAX_TYPE_7;E1BPE1MLANRT;3;0..1;String;;4;Ctg.imposto (sales tax, federal sales tax,...)
+TAXCLASS_7;E1BPE1MLANRT;3;0..1;String;;1;Classificação fiscal do material
+TAX_TYPE_8;E1BPE1MLANRT;3;0..1;String;;4;Ctg.imposto (sales tax, federal sales tax,...)
+TAXCLASS_8;E1BPE1MLANRT;3;0..1;String;;1;Classificação fiscal do material
+TAX_TYPE_9;E1BPE1MLANRT;3;0..1;String;;4;Ctg.imposto (sales tax, federal sales tax,...)
+TAXCLASS_9;E1BPE1MLANRT;3;0..1;String;;1;Classificação fiscal do material
+TAX_IND;E1BPE1MLANRT;3;0..1;String;;1;Indicador de imposto material (compras)
+MATERIAL_EXTERNAL;E1BPE1MLANRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLANRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLANRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLANRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MBEWRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - dados de avaliação
+FUNCTION;E1BPE1MBEWRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MBEWRT;3;0..1;String;;18;Nº do material
+VAL_AREA;E1BPE1MBEWRT;3;0..1;String;;4;Área de avaliação
+VAL_TYPE;E1BPE1MBEWRT;3;0..1;String;;10;Tipo de avaliação
+DEL_FLAG;E1BPE1MBEWRT;3;0..1;String;;1;Marcação p/eliminar todos os dads.mat.de um tipo avaliação
+PRICE_CTRL;E1BPE1MBEWRT;3;0..1;String;;1;Código de controle de preço
+MOVING_PR;E1BPE1MBEWRT;3;0..1;String;;25;Preço médio móvel/preço interno periódico
+STD_PRICE;E1BPE1MBEWRT;3;0..1;String;;25;Prç.standard
+PRICE_UNIT;E1BPE1MBEWRT;3;0..1;String;;6;Unidade preço
+VAL_CLASS;E1BPE1MBEWRT;3;0..1;String;;4;Classe de avaliação
+PR_CTRL_PP;E1BPE1MBEWRT;3;0..1;String;;1;Código de controle do preço do período precedente
+MOV_PR_PP;E1BPE1MBEWRT;3;0..1;String;;25;Preço médio móvel/preço interno periódico período precedente
+STD_PR_PP;E1BPE1MBEWRT;3;0..1;String;;25;Preço standard do período anterior
+PR_UNIT_PP;E1BPE1MBEWRT;3;0..1;String;;6;Unidade de preço do período precedente
+VCLASS_PP;E1BPE1MBEWRT;3;0..1;String;;4;Classe de avaliação do período precedente
+PR_CTRL_PY;E1BPE1MBEWRT;3;0..1;String;;1;Código de controle de preço do ano precedente
+MOV_PR_PY;E1BPE1MBEWRT;3;0..1;String;;25;Preço médio móvel/preço interno periódico do ano precedente
+STD_PR_PY;E1BPE1MBEWRT;3;0..1;String;;25;Preço standard do ano precedente
+PR_UNIT_PY;E1BPE1MBEWRT;3;0..1;String;;6;Unidade de preço do ano precedente
+VCLASS_PY;E1BPE1MBEWRT;3;0..1;String;;4;Classe de avaliação do ano precedente
+VAL_CAT;E1BPE1MBEWRT;3;0..1;String;;1;Categoria de avaliação
+FUTURE_PR;E1BPE1MBEWRT;3;0..1;String;;25;Preço futuro
+VALID_FROM;E1BPE1MBEWRT;3;0..1;String;;8;Início da validade do preço
+TAXPRICE_1;E1BPE1MBEWRT;3;0..1;String;;25;Preço que exprime o valor fiscal - nível 1
+COMMPRICE1;E1BPE1MBEWRT;3;0..1;String;;25;Preço que exprime valor comercial - nível 1
+TAXPRICE_3;E1BPE1MBEWRT;3;0..1;String;;25;Preço que exprime o valor tributário - nível 3
+COMMPRICE3;E1BPE1MBEWRT;3;0..1;String;;25;Preço que exprime valor comercial - nível 3
+LIFO_FIFO;E1BPE1MBEWRT;3;0..1;String;;1;Relevante para LIFO/FIFO
+POOLNUMBER;E1BPE1MBEWRT;3;0..1;String;;4;Nº pool para avaliação LIFO
+TAXPRICE_2;E1BPE1MBEWRT;3;0..1;String;;25;Preço que exprime o valor fiscal - nível 2
+COMMPRICE2;E1BPE1MBEWRT;3;0..1;String;;25;Preço que exprime valor comercial - nível 2
+DEVAL_IND;E1BPE1MBEWRT;3;0..1;String;;2;Valor mais baixo: indicador de desvalorização
+ML_ACTIVE;E1BPE1MBEWRT;3;0..1;String;;1;Ledger de material ativado a nível de material
+ML_SETTLE;E1BPE1MBEWRT;3;0..1;String;;1;Apropriação custos do ledger de materiais: controle
+VAL_MARGIN;E1BPE1MBEWRT;3;0..1;String;;9;Margem de avaliação
+VM_SO_STK;E1BPE1MBEWRT;3;0..1;String;;4;Classe de avaliação para estoque ordem de cliente
+VM_P_STOCK;E1BPE1MBEWRT;3;0..1;String;;4;Classe de avaliação para estoque para projeto
+MATL_USAGE;E1BPE1MBEWRT;3;0..1;String;;1;Utilização de material
+MAT_ORIGIN;E1BPE1MBEWRT;3;0..1;String;;1;Origem de material
+IN_HOUSE;E1BPE1MBEWRT;3;0..1;String;;1;Produção interna
+TAX_CML_UN;E1BPE1MBEWRT;3;0..1;String;;6;Unidade dos preços que exprimem val.comercial/tributário
+ORIG_GROUP;E1BPE1MBEWRT;3;0..1;String;;4;Grupo de origem como subdivisão da classe de custo
+ORIG_MAT;E1BPE1MBEWRT;3;0..1;String;;1;Origem referida a material
+OVERHEAD_GRP;E1BPE1MBEWRT;3;0..1;String;;10;Grupo de custos indiretos do cálculo de custos
+WITH_QTY_STRUCT;E1BPE1MBEWRT;3;0..1;String;;1;O material será cálculado com estrutura quantitativa
+PLND_PRICE;E1BPE1MBEWRT;3;0..1;String;;25;Preço planejado futuro
+PLNDPRICE1;E1BPE1MBEWRT;3;0..1;String;;25;Preço planejado futuro 1
+PLNDPRICE2;E1BPE1MBEWRT;3;0..1;String;;25;Preço planejado futuro 2
+PLNDPRICE3;E1BPE1MBEWRT;3;0..1;String;;25;Preço planejado futuro 3
+PLNDPRDATE1;E1BPE1MBEWRT;3;0..1;String;;8;Data a partir da qual será válido o preço previsto 1
+PLNDPRDATE2;E1BPE1MBEWRT;3;0..1;String;;8;Data a partir da qual será válido o preço previsto 2
+PLNDPRDATE3;E1BPE1MBEWRT;3;0..1;String;;8;Data a partir da qual será válido o preço previsto 3
+MATERIAL_EXTERNAL;E1BPE1MBEWRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MBEWRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MBEWRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MBEWRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MBEWRTX;IDOC;2;0..999999;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MBEWERT
+FUNCTION;E1BPE1MBEWRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MBEWRTX;3;0..1;String;;18;Nº do material
+VAL_AREA;E1BPE1MBEWRTX;3;0..1;String;;4;Área de avaliação
+VAL_TYPE;E1BPE1MBEWRTX;3;0..1;String;;10;Tipo de avaliação
+DEL_FLAG;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PRICE_CTRL;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MOVING_PR;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STD_PRICE;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PRICE_UNIT;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VAL_CLASS;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_CTRL_PP;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MOV_PR_PP;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STD_PR_PP;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_UNIT_PP;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VCLASS_PP;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_CTRL_PY;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MOV_PR_PY;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STD_PR_PY;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_UNIT_PY;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VCLASS_PY;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VAL_CAT;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+FUTURE_PR;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VALID_FROM;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TAXPRICE_1;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COMMPRICE1;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TAXPRICE_3;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COMMPRICE3;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LIFO_FIFO;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+POOLNUMBER;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TAXPRICE_2;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COMMPRICE2;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DEVAL_IND;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ML_ACTIVE;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ML_SETTLE;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VAL_MARGIN;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VM_SO_STK;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VM_P_STOCK;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATL_USAGE;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAT_ORIGIN;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+IN_HOUSE;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+TAX_CML_UN;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ORIG_GROUP;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ORIG_MAT;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+OVERHEAD_GRP;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+WITH_QTY_STRUCT;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLND_PRICE;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLNDPRICE1;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLNDPRICE2;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLNDPRICE3;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLNDPRDATE1;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLNDPRDATE2;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLNDPRDATE3;E1BPE1MBEWRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MBEWRTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MBEWRTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MBEWRTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MBEWRTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MBEWEXTRT;IDOC;2;0..999999;Complex;;;Transf.dados Retail - dados de avaliação do cliente
+FUNCTION;E1BPE1MBEWEXTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MBEWEXTRT;3;0..1;String;;18;Nº do material
+VAL_AREA;E1BPE1MBEWEXTRT;3;0..1;String;;4;Área de avaliação
+VAL_TYPE;E1BPE1MBEWEXTRT;3;0..1;String;;10;Tipo de avaliação
+FIELD1;E1BPE1MBEWEXTRT;3;0..1;String;;215;Container para dados caractere do comprimento 215
+FIELD2;E1BPE1MBEWEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MBEWEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MBEWEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MBEWEXTRT1;E1BPE1MBEWEXTRT;3;0..1;Complex;;;Transf.dados Retail - dados de avaliação do cliente
+MATERIAL_EXTERNAL;E1BPE1MBEWEXTRT1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MBEWEXTRT1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MBEWEXTRT1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MBEWEXTRT1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MBEWEXTRTX;IDOC;2;0..999999;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MBEWEXTRT
+FUNCTION;E1BPE1MBEWEXTRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MBEWEXTRTX;3;0..1;String;;18;Nº do material
+VAL_AREA;E1BPE1MBEWEXTRTX;3;0..1;String;;4;Área de avaliação
+VAL_TYPE;E1BPE1MBEWEXTRTX;3;0..1;String;;10;Tipo de avaliação
+FIELD1;E1BPE1MBEWEXTRTX;3;0..1;String;;215;Container para dados caractere do comprimento 215
+FIELD2;E1BPE1MBEWEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MBEWEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MBEWEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MBEWEXTRTX1;E1BPE1MBEWEXTRTX;3;0..1;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MBEWEXTRT
+MATERIAL_EXTERNAL;E1BPE1MBEWEXTRTX1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MBEWEXTRTX1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MBEWEXTRTX1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MBEWEXTRTX1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MLGNRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - dados de sistema de depósito
+FUNCTION;E1BPE1MLGNRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MLGNRT;3;0..1;String;;18;Nº do material
+WHSE_NO;E1BPE1MLGNRT;3;0..1;String;;3;Nº do depósito/complexo de depósito
+DEL_FLAG;E1BPE1MLGNRT;3;0..1;String;;1;Marcação p/eliminar todos os dados mat.de um número depósito
+STGESECTOR;E1BPE1MLGNRT;3;0..1;String;;3;Código da área de armazenamento
+PLACEMENT;E1BPE1MLGNRT;3;0..1;String;;3;Código da categoria de depósito para entrada em depósito
+WITHDRAWAL;E1BPE1MLGNRT;3;0..1;String;;3;Código de ctg.de depósito para saída de depósito
+L_EQUIP_1;E1BPE1MLGNRT;3;0..1;String;;15;1ª qtd.meios auxiliares para carregamento
+L_EQUIP_2;E1BPE1MLGNRT;3;0..1;String;;15;2ª qtd.meios aux.para carregamento
+L_EQUIP_3;E1BPE1MLGNRT;3;0..1;String;;15;3ª qtd.meios aux.para carregamento
+LEQ_UNIT_1;E1BPE1MLGNRT;3;0..1;String;;3;Unidade de medida para a 1ª qtd.meios aux.carregamento
+LEQ_UNIT_1_ISO;E1BPE1MLGNRT;3;0..1;String;;3;Unidade de medida para a 1ª qtd.meios aux.carreg.em code ISO
+LEQ_UNIT_2;E1BPE1MLGNRT;3;0..1;String;;3;Unidade de medida para a 2ª qtd.meios aux.carregamento
+LEQ_UNIT_2_ISO;E1BPE1MLGNRT;3;0..1;String;;3;Unidade de medida p/2ª qtd.meios aux.carregam.em code ISO
+LEQ_UNIT_3;E1BPE1MLGNRT;3;0..1;String;;3;Unidade de medida para a 3ª qtd.meios aux.carregamento
+LEQ_UNIT_3_ISO;E1BPE1MLGNRT;3;0..1;String;;3;Unidade de medida para a 3ª qtd.meios aux.carreg.em code ISO
+UNITTYPE_1;E1BPE1MLGNRT;3;0..1;String;;3;1. tipo de unidade de depósito
+UNITTYPE_2;E1BPE1MLGNRT;3;0..1;String;;3;2. tipo de unidade de depósito
+UNITTYPE_3;E1BPE1MLGNRT;3;0..1;String;;3;3. tipo de unidade de depósito
+WM_UNIT;E1BPE1MLGNRT;3;0..1;String;;3;Unidade de medida WM
+WM_UNIT_ISO;E1BPE1MLGNRT;3;0..1;String;;3;Unidade de medida WM em code ISO
+ADD_TO_STK;E1BPE1MLGNRT;3;0..1;String;;1;Código: armazenamento adicional permitido
+BLOCK_STGE;E1BPE1MLGNRT;3;0..1;String;;2;Código depósito em bloco
+MSG_TO_IM;E1BPE1MLGNRT;3;0..1;String;;1;Código: mensagem para a administração de estoques
+SPEC_MVMT;E1BPE1MLGNRT;3;0..1;String;;1;Código especial para movimento na administração de depósitos
+CAPY_USAGE;E1BPE1MLGNRT;3;0..1;String;;13;Consumo de capacidade
+PROCURE_UN;E1BPE1MLGNRT;3;0..1;String;;3;Unidade de medida de referência para consumo capacidade
+PROCURE_UN_ISO;E1BPE1MLGNRT;3;0..1;String;;3;UM de referência para consumo de capacidade em code ISO
+STGE_TYPE;E1BPE1MLGNRT;3;0..1;String;;3;Tipo de depósito picking para planejamento global/detalhado
+REF_UNIT;E1BPE1MLGNRT;3;0..1;String;;1;Proposta para unidade de medida do mestre de material
+_--32STEP_PICK;E1BPE1MLGNRT;3;0..1;String;;1;Relevância do material para picking em 2 etapas
+MATERIAL_EXTERNAL;E1BPE1MLGNRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLGNRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLGNRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLGNRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MLGNRTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1MLGNRT
+FUNCTION;E1BPE1MLGNRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MLGNRTX;3;0..1;String;;18;Nº do material
+WHSE_NO;E1BPE1MLGNRTX;3;0..1;String;;3;Nº do depósito/complexo de depósito
+DEL_FLAG;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STGESECTOR;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PLACEMENT;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+WITHDRAWAL;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+L_EQUIP_1;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+L_EQUIP_2;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+L_EQUIP_3;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LEQ_UNIT_1;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LEQ_UNIT_1_ISO;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LEQ_UNIT_2;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LEQ_UNIT_2_ISO;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LEQ_UNIT_3;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LEQ_UNIT_3_ISO;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNITTYPE_1;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNITTYPE_2;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNITTYPE_3;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+WM_UNIT;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+WM_UNIT_ISO;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ADD_TO_STK;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+BLOCK_STGE;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MSG_TO_IM;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SPEC_MVMT;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CAPY_USAGE;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROCURE_UN;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROCURE_UN_ISO;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STGE_TYPE;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REF_UNIT;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+_--32STEP_PICK;E1BPE1MLGNRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MLGNRTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLGNRTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLGNRTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLGNRTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MLGNEXTRT;IDOC;2;0..999999;Complex;;;Transf.dados Retail - dados sistema depósito do cliente
+FUNCTION;E1BPE1MLGNEXTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MLGNEXTRT;3;0..1;String;;18;Nº do material
+WHSE_NO;E1BPE1MLGNEXTRT;3;0..1;String;;3;Nº do depósito/complexo de depósito
+FIELD1;E1BPE1MLGNEXTRT;3;0..1;String;;226;Container para dados caractere do comprimento 226
+FIELD2;E1BPE1MLGNEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MLGNEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MLGNEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MLGNEXTRT1;E1BPE1MLGNEXTRT;3;0..1;Complex;;;Transf.dados Retail - dados sistema depósito do cliente
+MATERIAL_EXTERNAL;E1BPE1MLGNEXTRT1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLGNEXTRT1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLGNEXTRT1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLGNEXTRT1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MLGNEXTRTX;IDOC;2;0..999999;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MLGNEXTRT
+FUNCTION;E1BPE1MLGNEXTRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MLGNEXTRTX;3;0..1;String;;18;Nº do material
+WHSE_NO;E1BPE1MLGNEXTRTX;3;0..1;String;;3;Nº do depósito/complexo de depósito
+FIELD1;E1BPE1MLGNEXTRTX;3;0..1;String;;226;Container para dados caractere do comprimento 226
+FIELD2;E1BPE1MLGNEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MLGNEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MLGNEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MLGNEXTRTX1;E1BPE1MLGNEXTRTX;3;0..1;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MLGNEXTRT
+MATERIAL_EXTERNAL;E1BPE1MLGNEXTRTX1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLGNEXTRTX1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLGNEXTRTX1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLGNEXTRTX1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MLGTRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - dados de tipo de depósito
+FUNCTION;E1BPE1MLGTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MLGTRT;3;0..1;String;;18;Nº do material
+WHSE_NO;E1BPE1MLGTRT;3;0..1;String;;3;Nº do depósito/complexo de depósito
+STGE_TYPE;E1BPE1MLGTRT;3;0..1;String;;3;Tipo de depósito
+DEL_FLAG;E1BPE1MLGTRT;3;0..1;String;;1;Marcação p/eliminar todos os dados mat.de um tipo depósito
+STGE_BIN;E1BPE1MLGTRT;3;0..1;String;;10;Posição no depósito
+MAX_SB_QTY;E1BPE1MLGTRT;3;0..1;String;;15;Qtd.máxima posiç.no dep.
+MIN_SB_QTY;E1BPE1MLGTRT;3;0..1;String;;15;Qtd.mínima posiç.no dep.
+CTRL_QTY;E1BPE1MLGTRT;3;0..1;String;;15;Quantidade de manejo
+REPLEN_QTY;E1BPE1MLGTRT;3;0..1;String;;15;Quantidade de reabastecimento
+PICK_AREA;E1BPE1MLGTRT;3;0..1;String;;3;Área de picking
+ROUND_UNIT;E1BPE1MLGTRT;3;0..1;String;;15;Qtd.arredond.
+MATERIAL_EXTERNAL;E1BPE1MLGTRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLGTRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLGTRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLGTRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MLGTRTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1MLGTRT
+FUNCTION;E1BPE1MLGTRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MLGTRTX;3;0..1;String;;18;Nº do material
+WHSE_NO;E1BPE1MLGTRTX;3;0..1;String;;3;Nº do depósito/complexo de depósito
+STGE_TYPE;E1BPE1MLGTRTX;3;0..1;String;;3;Tipo de depósito
+DEL_FLAG;E1BPE1MLGTRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+STGE_BIN;E1BPE1MLGTRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAX_SB_QTY;E1BPE1MLGTRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MIN_SB_QTY;E1BPE1MLGTRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CTRL_QTY;E1BPE1MLGTRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REPLEN_QTY;E1BPE1MLGTRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PICK_AREA;E1BPE1MLGTRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ROUND_UNIT;E1BPE1MLGTRTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MLGTRTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLGTRTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLGTRTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLGTRTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MLGTEXTRT;IDOC;2;0..999999;Complex;;;Transf.dados Retail - dados tipo de depósito do cliente
+FUNCTION;E1BPE1MLGTEXTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MLGTEXTRT;3;0..1;String;;18;Nº do material
+WHSE_NO;E1BPE1MLGTEXTRT;3;0..1;String;;3;Nº do depósito/complexo de depósito
+STGE_TYPE;E1BPE1MLGTEXTRT;3;0..1;String;;3;Tipo de depósito
+FIELD1;E1BPE1MLGTEXTRT;3;0..1;String;;223;Container para dados caractere do comprimento 223
+FIELD2;E1BPE1MLGTEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MLGTEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MLGTEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MLGTEXTRT1;E1BPE1MLGTEXTRT;3;0..1;Complex;;;Transf.dados Retail - dados tipo de depósito do cliente
+MATERIAL_EXTERNAL;E1BPE1MLGTEXTRT1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLGTEXTRT1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLGTEXTRT1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLGTEXTRT1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MLGTEXTRTX;IDOC;2;0..999999;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MLGTEXTRT
+FUNCTION;E1BPE1MLGTEXTRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MLGTEXTRTX;3;0..1;String;;18;Nº do material
+WHSE_NO;E1BPE1MLGTEXTRTX;3;0..1;String;;3;Nº do depósito/complexo de depósito
+STGE_TYPE;E1BPE1MLGTEXTRTX;3;0..1;String;;3;Tipo de depósito
+FIELD1;E1BPE1MLGTEXTRTX;3;0..1;String;;223;Container para dados caractere do comprimento 223
+FIELD2;E1BPE1MLGTEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MLGTEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MLGTEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MLGTEXTRTX1;E1BPE1MLGTEXTRTX;3;0..1;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MLGTEXTRT
+MATERIAL_EXTERNAL;E1BPE1MLGTEXTRTX1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLGTEXTRTX1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLGTEXTRTX1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLGTEXTRTX1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MVKERT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - dados de vendas
+FUNCTION;E1BPE1MVKERT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MVKERT;3;0..1;String;;18;Nº do material
+SALES_ORG;E1BPE1MVKERT;3;0..1;String;;4;Organização de vendas
+DISTR_CHAN;E1BPE1MVKERT;3;0..1;String;;2;Canal de distribuição
+DEL_FLAG;E1BPE1MVKERT;3;0..1;String;;1;Código: marcar mat.para eliminação a nível canal de vendas
+MATL_STATS;E1BPE1MVKERT;3;0..1;String;;1;Grupo estatístico material
+REBATE_GRP;E1BPE1MVKERT;3;0..1;String;;2;Grupo de bônus
+COMM_GROUP;E1BPE1MVKERT;3;0..1;String;;2;Grupo de comissões
+CASH_DISC;E1BPE1MVKERT;3;0..1;String;;1;Código: com direito a desconto
+SAL_STATUS;E1BPE1MVKERT;3;0..1;String;;2;Status do material específica da linha de vendas
+VALID_FROM;E1BPE1MVKERT;3;0..1;String;;8;Data a partir da qual vale status mat.específ.linha vendas
+MIN_ORDER;E1BPE1MVKERT;3;0..1;String;;15;Quantidade mínima da ordem em UM base
+MIN_DELY;E1BPE1MVKERT;3;0..1;String;;15;Qtd.mín.fornecimento no processamento da nota de remessa
+MIN_MTO;E1BPE1MVKERT;3;0..1;String;;15;Quantidade mínima de produção individual
+DELY_UNIT;E1BPE1MVKERT;3;0..1;String;;15;Unidade de medida da remessa
+DELY_UOM;E1BPE1MVKERT;3;0..1;String;;3;Unidade de medida da unidade de remessa
+DELY_UOM_ISO;E1BPE1MVKERT;3;0..1;String;;3;Unidade de medida da UM de remessa em code ISO
+SALES_UNIT;E1BPE1MVKERT;3;0..1;String;;3;Unidade de venda
+SALES_UNIT_ISO;E1BPE1MVKERT;3;0..1;String;;3;Unidade de venda em code ISO
+ITEM_CAT;E1BPE1MVKERT;3;0..1;String;;4;Grupo de ctgs.item do mestre de material
+DELYG_PLNT;E1BPE1MVKERT;3;0..1;String;;4;Centro fornecedor
+PROD_HIER;E1BPE1MVKERT;3;0..1;String;;18;Hierarquia de produtos
+PR_REF_MAT;E1BPE1MVKERT;3;0..1;String;;18;Mat.ref.p/prç.
+MAT_PR_GRP;E1BPE1MVKERT;3;0..1;String;;2;Grupo de materiais
+ACCT_ASSGT;E1BPE1MVKERT;3;0..1;String;;2;Grupo de classificação contábil - material
+MATL_GRP_1;E1BPE1MVKERT;3;0..1;String;;3;Grupo de material 1
+MATL_GRP_2;E1BPE1MVKERT;3;0..1;String;;3;Grupo de material 2
+MATL_GRP_3;E1BPE1MVKERT;3;0..1;String;;3;Grupo de materiais 3
+MATL_GRP_4;E1BPE1MVKERT;3;0..1;String;;3;Grupo de material 4
+MATL_GRP_5;E1BPE1MVKERT;3;0..1;String;;3;Grupo de material 5
+ASSORT_LEV;E1BPE1MVKERT;3;0..1;String;;2;Nível de sortimento
+ASSORTPRIO;E1BPE1MVKERT;3;0..1;String;;1;Prioridade de sortimento ext.
+LI_PROC_ST;E1BPE1MVKERT;3;0..1;String;;2;Método de listagem para a filial ou outros tipos sortimento
+LI_PROC_DC;E1BPE1MVKERT;3;0..1;String;;2;Método catalogação p/tps.sortimento do centro distribuição
+ASSORTLIST;E1BPE1MVKERT;3;0..1;String;;1;Catalogação de sortimento ativada
+PROD_ATT_1;E1BPE1MVKERT;3;0..1;String;;1;Código atributo de produto 1
+PROD_ATT_2;E1BPE1MVKERT;3;0..1;String;;1;Código atributo de produto 2
+PROD_ATT_3;E1BPE1MVKERT;3;0..1;String;;1;Código atributo de produto 3
+PROD_ATT_4;E1BPE1MVKERT;3;0..1;String;;1;Código atributo de produto 4
+PROD_ATT_5;E1BPE1MVKERT;3;0..1;String;;1;Código atributo de produto 5
+PROD_ATT_6;E1BPE1MVKERT;3;0..1;String;;1;Código atributo de produto 6
+PROD_ATT_7;E1BPE1MVKERT;3;0..1;String;;1;Código atributo de produto 7
+PROD_ATT_8;E1BPE1MVKERT;3;0..1;String;;1;Código atributo de produto 8
+PROD_ATT_9;E1BPE1MVKERT;3;0..1;String;;1;Código atributo de produto 9
+PROD_ATT10;E1BPE1MVKERT;3;0..1;String;;1;Código atributo de produto 10
+LIST_ST_FR;E1BPE1MVKERT;3;0..1;String;;8;Data a partir da qual se efetua a catalogação na filial
+LIST_ST_TO;E1BPE1MVKERT;3;0..1;String;;8;Data até à qual é efetuada a catalogação na filial
+LIST_DC_FR;E1BPE1MVKERT;3;0..1;String;;8;Data a partir da qual é efetuada a catalogação no CD
+LIST_DC_TO;E1BPE1MVKERT;3;0..1;String;;8;Data até à qual será catalogado no dep.centr./cent.distr.
+SELL_ST_FR;E1BPE1MVKERT;3;0..1;String;;8;Data a partir da qual se vende na filial
+SELL_ST_TO;E1BPE1MVKERT;3;0..1;String;;8;Data até à qual se vende na filial
+SELL_DC_FR;E1BPE1MVKERT;3;0..1;String;;8;Data a partir da qual se vende no centro de distribuição
+SELL_DC_TO;E1BPE1MVKERT;3;0..1;String;;8;Dta.até a qual se vende no depart.central/centro distrib.
+MAX_DELY;E1BPE1MVKERT;3;0..1;String;;15;Qtd.máxima.fornec.no processamento ordem de filial
+UNIT_GROUP;E1BPE1MVKERT;3;0..1;String;;4;Grupo unidade medida
+ROUND_PROF;E1BPE1MVKERT;3;0..1;String;;4;Perfil de arredondamento
+PRICE_FIXING;E1BPE1MVKERT;3;0..1;String;;1;Código para preço tabelado
+VAR_SALES_UN;E1BPE1MVKERT;3;0..1;String;;1;Unidade de venda variável não permitida
+COMPETITION_CHAR;E1BPE1MVKERT;3;0..1;String;;1;Caracterização da concorrência do material
+MATERIAL_EXTERNAL;E1BPE1MVKERT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MVKERT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MVKERT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+PR_REF_MAT_EXTERNAL;E1BPE1MVKERT;3;0..1;String;;40;Nº de material longo para o campo PR_REF_MAT
+PR_REF_MAT_GUID;E1BPE1MVKERT;3;0..1;String;;32;ID único externo para o campo PR_REF_MAT
+PR_REF_MAT_VERSION;E1BPE1MVKERT;3;0..1;String;;10;Nº da versão para o campo PR_REF_MAT
+PRICE_BAND;E1BPE1MVKERT;3;0..1;String;;2;Tipo de faixa de preço
+MATERIAL_LONG;E1BPE1MVKERT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+PR_REF_MAT_LONG;E1BPE1MVKERT;3;0..1;String;;40;Material de referência para o preço
+E1BPE1MVKERTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1MVKERT
+FUNCTION;E1BPE1MVKERTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MVKERTX;3;0..1;String;;18;Nº do material
+SALES_ORG;E1BPE1MVKERTX;3;0..1;String;;4;Organização de vendas
+DISTR_CHAN;E1BPE1MVKERTX;3;0..1;String;;2;Canal de distribuição
+DEL_FLAG;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATL_STATS;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+REBATE_GRP;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COMM_GROUP;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+CASH_DISC;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SAL_STATUS;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VALID_FROM;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MIN_ORDER;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MIN_DELY;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MIN_MTO;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DELY_UNIT;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DELY_UOM;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DELY_UOM_ISO;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SALES_UNIT;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SALES_UNIT_ISO;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ITEM_CAT;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DELYG_PLNT;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_HIER;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_REF_MAT;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAT_PR_GRP;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ACCT_ASSGT;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATL_GRP_1;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATL_GRP_2;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATL_GRP_3;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATL_GRP_4;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATL_GRP_5;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ASSORT_LEV;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ASSORTPRIO;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LI_PROC_ST;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LI_PROC_DC;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ASSORTLIST;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ATT_1;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ATT_2;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ATT_3;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ATT_4;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ATT_5;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ATT_6;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ATT_7;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ATT_8;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ATT_9;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PROD_ATT10;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LIST_ST_FR;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LIST_ST_TO;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LIST_DC_FR;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+LIST_DC_TO;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SELL_ST_FR;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SELL_ST_TO;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SELL_DC_FR;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SELL_DC_TO;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MAX_DELY;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+UNIT_GROUP;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+ROUND_PROF;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PRICE_FIXING;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VAR_SALES_UN;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+COMPETITION_CHAR;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1MVKERTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MVKERTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MVKERTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+PR_REF_MAT_EXTERNAL;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_REF_MAT_GUID;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PR_REF_MAT_VERSION;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PRICE_BAND;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_LONG;E1BPE1MVKERTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+PR_REF_MAT_LONG;E1BPE1MVKERTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+E1BPE1MVKEEXTRT;IDOC;2;0..999999;Complex;;;Transf.dados Retail - dados de venda do cliente
+FUNCTION;E1BPE1MVKEEXTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MVKEEXTRT;3;0..1;String;;18;Nº do material
+SALES_ORG;E1BPE1MVKEEXTRT;3;0..1;String;;4;Organização de vendas
+DISTR_CHAN;E1BPE1MVKEEXTRT;3;0..1;String;;2;Canal de distribuição
+FIELD1;E1BPE1MVKEEXTRT;3;0..1;String;;223;Container para dados caractere do comprimento 223
+FIELD2;E1BPE1MVKEEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MVKEEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MVKEEXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MVKEEXTRT1;E1BPE1MVKEEXTRT;3;0..1;Complex;;;Transf.dados Retail - dados de venda do cliente
+MATERIAL_EXTERNAL;E1BPE1MVKEEXTRT1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MVKEEXTRT1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MVKEEXTRT1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MVKEEXTRT1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MVKEEXTRTX;IDOC;2;0..999999;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MVKEEXTRT
+FUNCTION;E1BPE1MVKEEXTRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1MVKEEXTRTX;3;0..1;String;;18;Nº do material
+SALES_ORG;E1BPE1MVKEEXTRTX;3;0..1;String;;4;Organização de vendas
+DISTR_CHAN;E1BPE1MVKEEXTRTX;3;0..1;String;;2;Canal de distribuição
+FIELD1;E1BPE1MVKEEXTRTX;3;0..1;String;;223;Container para dados caractere do comprimento 223
+FIELD2;E1BPE1MVKEEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1MVKEEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1MVKEEXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1MVKEEXTRTX1;E1BPE1MVKEEXTRTX;3;0..1;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1MVKEEXTRT
+MATERIAL_EXTERNAL;E1BPE1MVKEEXTRTX1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MVKEEXTRTX1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MVKEEXTRTX1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MVKEEXTRTX1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1WLK2RT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - dados POS
+FUNCTION;E1BPE1WLK2RT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1WLK2RT;3;0..1;String;;18;Nº do material
+SALES_ORG;E1BPE1WLK2RT;3;0..1;String;;4;Org.vendas em canal de vendas Retail
+DISTR_CHAN;E1BPE1WLK2RT;3;0..1;String;;2;Canal de distribuição em canal de vendas Retail
+PLANT;E1BPE1WLK2RT;3;0..1;String;;4;Centro de comercialização
+NO_REP_KEY;E1BPE1WLK2RT;3;0..1;String;;1;Sem tecla de repetição
+PRICE_REQD;E1BPE1WLK2RT;3;0..1;String;;1;Preço necessário
+SELL_ST_FR;E1BPE1WLK2RT;3;0..1;String;;8;Data a partir da qual se vende na filial
+SELL_ST_TO;E1BPE1WLK2RT;3;0..1;String;;8;Data até à qual se vende na filial
+SAL_STATUS;E1BPE1WLK2RT;3;0..1;String;;2;Status do material específica da linha de vendas
+VALID_FROM;E1BPE1WLK2RT;3;0..1;String;;8;Data a partir da qual vale status mat.específ.linha vendas
+DISC_ALLWD;E1BPE1WLK2RT;3;0..1;String;;1;Descontos admitidos
+SCALES_GRP;E1BPE1WLK2RT;3;0..1;String;;4;Grupo de balanças
+MATERIAL_EXTERNAL;E1BPE1WLK2RT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1WLK2RT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1WLK2RT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1WLK2RT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1WLK2RTX;IDOC;2;0..999999;Complex;;;Transf.dados varejo - barra de seleção para BAPIE1WLK2RT
+FUNCTION;E1BPE1WLK2RTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1WLK2RTX;3;0..1;String;;18;Nº do material
+SALES_ORG;E1BPE1WLK2RTX;3;0..1;String;;4;Org.vendas em canal de vendas Retail
+DISTR_CHAN;E1BPE1WLK2RTX;3;0..1;String;;2;Canal de distribuição em canal de vendas Retail
+PLANT;E1BPE1WLK2RTX;3;0..1;String;;4;Centro de comercialização
+NO_REP_KEY;E1BPE1WLK2RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+PRICE_REQD;E1BPE1WLK2RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SELL_ST_FR;E1BPE1WLK2RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SELL_ST_TO;E1BPE1WLK2RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SAL_STATUS;E1BPE1WLK2RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+VALID_FROM;E1BPE1WLK2RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+DISC_ALLWD;E1BPE1WLK2RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+SCALES_GRP;E1BPE1WLK2RTX;3;0..1;String;;1;Info modificação p/respectivo campo dados utilização
+MATERIAL_EXTERNAL;E1BPE1WLK2RTX;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1WLK2RTX;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1WLK2RTX;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1WLK2RTX;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1WLK2EXTRT;IDOC;2;0..999999;Complex;;;Transf.dados Retail - dados POS do cliente
+FUNCTION;E1BPE1WLK2EXTRT;3;0..1;String;;3;Função
+MATERIAL;E1BPE1WLK2EXTRT;3;0..1;String;;18;Nº do material
+SALES_ORG;E1BPE1WLK2EXTRT;3;0..1;String;;4;Org.vendas em canal de vendas Retail
+DISTR_CHAN;E1BPE1WLK2EXTRT;3;0..1;String;;2;Canal de distribuição em canal de vendas Retail
+PLANT;E1BPE1WLK2EXTRT;3;0..1;String;;4;Centro de comercialização
+FIELD1;E1BPE1WLK2EXTRT;3;0..1;String;;219;Container para dados caractere do comprimento 219
+FIELD2;E1BPE1WLK2EXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1WLK2EXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1WLK2EXTRT;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1WLK2EXTRT1;E1BPE1WLK2EXTRT;3;0..1;Complex;;;Transf.dados Retail - dados POS do cliente
+MATERIAL_EXTERNAL;E1BPE1WLK2EXTRT1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1WLK2EXTRT1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1WLK2EXTRT1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1WLK2EXTRT1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1WLK2EXTRTX;IDOC;2;0..999999;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1WLK2EXTRT
+FUNCTION;E1BPE1WLK2EXTRTX;3;0..1;String;;3;Função
+MATERIAL;E1BPE1WLK2EXTRTX;3;0..1;String;;18;Nº do material
+SALES_ORG;E1BPE1WLK2EXTRTX;3;0..1;String;;4;Org.vendas em canal de vendas Retail
+DISTR_CHAN;E1BPE1WLK2EXTRTX;3;0..1;String;;2;Canal de distribuição em canal de vendas Retail
+PLANT;E1BPE1WLK2EXTRTX;3;0..1;String;;4;Centro de comercialização
+FIELD1;E1BPE1WLK2EXTRTX;3;0..1;String;;219;Container para dados caractere do comprimento 219
+FIELD2;E1BPE1WLK2EXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD3;E1BPE1WLK2EXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+FIELD4;E1BPE1WLK2EXTRTX;3;0..1;String;;250;Container para dados caractere do comprimento 250
+E1BPE1WLK2EXTRTX1;E1BPE1WLK2EXTRTX;3;0..1;Complex;;;Transf.dados Retail - barra de seleção para BAPIE1WLK2EXTRT
+MATERIAL_EXTERNAL;E1BPE1WLK2EXTRTX1;4;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1WLK2EXTRTX1;4;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1WLK2EXTRTX1;4;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1WLK2EXTRTX1;4;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1MLTXRT;IDOC;2;0..999999;Complex;;;Transf.dados varejo - textos descritivos
+FUNCTION;E1BPE1MLTXRT;3;0..1;String;;3;Função
+APPLOBJECT;E1BPE1MLTXRT;3;0..1;String;;10;Textos: objeto de aplicação
+TEXT_NAME;E1BPE1MLTXRT;3;0..1;String;;70;Nome
+TEXT_ID;E1BPE1MLTXRT;3;0..1;String;;4;ID de texto
+LANGU;E1BPE1MLTXRT;3;0..1;String;;1;Código de idioma
+LANGU_ISO;E1BPE1MLTXRT;3;0..1;String;;2;Código de idiomas SAP de 2 dígitos
+FORMAT_COL;E1BPE1MLTXRT;3;0..1;String;;2;Coluna de formato
+TEXT_LINE;E1BPE1MLTXRT;3;0..1;String;;132;Linha de texto
+MATERIAL;E1BPE1MLTXRT;3;0..1;String;;18;Nº do material
+MATERIAL_EXTERNAL;E1BPE1MLTXRT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1MLTXRT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1MLTXRT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1MLTXRT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1WRKKEY;IDOC;2;0..999999;Complex;;;Transf.dados varejo - lista dos centros ident.atualizados
+FUNCTION;E1BPE1WRKKEY;3;0..1;String;;3;Função
+MATERIAL;E1BPE1WRKKEY;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1WRKKEY;3;0..1;String;;4;Centro
+MATERIAL_EXTERNAL;E1BPE1WRKKEY;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1WRKKEY;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1WRKKEY;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1WRKKEY;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1LGOKEY;IDOC;2;0..999999;Complex;;;Transf.dados varejo - lista dos depósitos ident.atualizados
+FUNCTION;E1BPE1LGOKEY;3;0..1;String;;3;Função
+MATERIAL;E1BPE1LGOKEY;3;0..1;String;;18;Nº do material
+PLANT;E1BPE1LGOKEY;3;0..1;String;;4;Centro
+STGE_LOC;E1BPE1LGOKEY;3;0..1;String;;4;Depósito
+MATERIAL_EXTERNAL;E1BPE1LGOKEY;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1LGOKEY;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1LGOKEY;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1LGOKEY;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1VTLKEY;IDOC;2;0..999999;Complex;;;Transf.dados varejo - lista canais de vendas ident.atualiz.
+FUNCTION;E1BPE1VTLKEY;3;0..1;String;;3;Função
+MATERIAL;E1BPE1VTLKEY;3;0..1;String;;18;Nº do material
+SALES_ORG;E1BPE1VTLKEY;3;0..1;String;;4;Organização de vendas
+DISTR_CHAN;E1BPE1VTLKEY;3;0..1;String;;2;Canal de distribuição
+MATERIAL_EXTERNAL;E1BPE1VTLKEY;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1VTLKEY;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1VTLKEY;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1VTLKEY;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1LGNKEY;IDOC;2;0..999999;Complex;;;Transf.dados varejo - lista dos sistemas dep.ident.atualiz.
+FUNCTION;E1BPE1LGNKEY;3;0..1;String;;3;Função
+MATERIAL;E1BPE1LGNKEY;3;0..1;String;;18;Nº do material
+WHSE_NO;E1BPE1LGNKEY;3;0..1;String;;3;Nº do depósito/complexo de depósito
+MATERIAL_EXTERNAL;E1BPE1LGNKEY;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1LGNKEY;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1LGNKEY;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1LGNKEY;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1LGTKEY;IDOC;2;0..999999;Complex;;;Transf.dados varejo - lista dos tipos depósito ident.atual.
+FUNCTION;E1BPE1LGTKEY;3;0..1;String;;3;Função
+MATERIAL;E1BPE1LGTKEY;3;0..1;String;;18;Nº do material
+WHSE_NO;E1BPE1LGTKEY;3;0..1;String;;3;Nº do depósito/complexo de depósito
+STGE_TYPE;E1BPE1LGTKEY;3;0..1;String;;3;Tipo de depósito
+MATERIAL_EXTERNAL;E1BPE1LGTKEY;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1LGTKEY;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1LGTKEY;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1LGTKEY;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPE1BWAKEY;IDOC;2;0..999999;Complex;;;Transf.dados varejo - lista tipos de avaliação ident.atual.
+FUNCTION;E1BPE1BWAKEY;3;0..1;String;;3;Função
+MATERIAL;E1BPE1BWAKEY;3;0..1;String;;18;Nº do material
+VAL_AREA;E1BPE1BWAKEY;3;0..1;String;;4;Área de avaliação
+VAL_TYPE;E1BPE1BWAKEY;3;0..1;String;;10;Tipo de avaliação
+MATERIAL_EXTERNAL;E1BPE1BWAKEY;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPE1BWAKEY;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPE1BWAKEY;3;0..1;String;;10;Nº de versão para campo MATERIAL
+MATERIAL_LONG;E1BPE1BWAKEY;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+E1BPTEXTLCOMP;IDOC;2;0..999999;Complex;;;null
+FUNCTION;E1BPTEXTLCOMP;3;0..1;String;;3;Função
+MATERIAL;E1BPTEXTLCOMP;3;0..1;String;;18;Nº do material
+TEXTILE_COMPONENT_POSITION;E1BPTEXTLCOMP;3;0..1;String;;2;Posição da fibra de têxtil
+TEXTILE_COMPONENT_CODE;E1BPTEXTLCOMP;3;0..1;String;;5;Código de componente têxtil
+ANIMAL_ORIGIN_FLAG;E1BPTEXTLCOMP;3;0..1;String;;1;Código: contém partes não têxteis de origem animal
+MATERIAL_LONG;E1BPTEXTLCOMP;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+MATERIAL_EXTERNAL;E1BPTEXTLCOMP;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPTEXTLCOMP;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPTEXTLCOMP;3;0..1;String;;10;Nº de versão para campo MATERIAL
+E1BPTEXTLFIBR;IDOC;2;0..999999;Complex;;;null
+FUNCTION;E1BPTEXTLFIBR;3;0..1;String;;3;Função
+MATERIAL;E1BPTEXTLFIBR;3;0..1;String;;18;Nº do material
+TEXTILE_COMPONENT_POSITION;E1BPTEXTLFIBR;3;0..1;String;;2;Posição da fibra de têxtil
+TEXTILE_FIBER_POSITION;E1BPTEXTLFIBR;3;0..1;String;;2;Posição da fibra de têxtil
+FIBER_CODE;E1BPTEXTLFIBR;3;0..1;String;;3;Código fibras para tecidos ( por exemplo, algodão, seda,...)
+FIBER_CODE_ISO;E1BPTEXTLFIBR;3;0..1;String;;8;Código ISO para denominação de fibra de têxteis
+FIBER_PART;E1BPTEXTLFIBR;3;0..1;String;;3;Quota de fibras em porcentagem
+SCIENTIFIC_NAME_CODE;E1BPTEXTLFIBR;3;0..1;String;;3;Código para nome científico
+PRINT_FLAG;E1BPTEXTLFIBR;3;0..1;String;;1;Imprimir
+PSM_CODE;E1BPTEXTLFIBR;3;0..1;String;;2;Código para administração de espécies protegidas
+DOKNR;E1BPTEXTLFIBR;3;0..1;String;;25;Nº documento
+DOKAR;E1BPTEXTLFIBR;3;0..1;String;;3;Tipo de documento
+DOKTL;E1BPTEXTLFIBR;3;0..1;String;;3;Documento parcial
+DOKVR;E1BPTEXTLFIBR;3;0..1;String;;2;Versão do documento
+COUNTRY;E1BPTEXTLFIBR;3;0..1;String;;3;Chave do país
+COUNTRY_ISO;E1BPTEXTLFIBR;3;0..1;String;;2;Código do país em código ISO
+MATERIAL_LONG;E1BPTEXTLFIBR;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+MATERIAL_EXTERNAL;E1BPTEXTLFIBR;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPTEXTLFIBR;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPTEXTLFIBR;3;0..1;String;;10;Nº de versão para campo MATERIAL
+E1BPSGTMVKE;IDOC;2;0..999999;Complex;;;Retail Data Transfer: Segmentation dependent Sales Status
+FUNCTION;E1BPSGTMVKE;3;0..1;String;;3;Função
+MATERIAL;E1BPSGTMVKE;3;0..1;String;;18;Nº do material
+SALESORG;E1BPSGTMVKE;3;0..1;String;;4;Organização de vendas
+DISTR_CHAN;E1BPSGTMVKE;3;0..1;String;;2;Canal de distribuição
+REQ_SEGMENT;E1BPSGTMVKE;3;0..1;String;;16;Segmento de necessidade
+SAL_STATUS;E1BPSGTMVKE;3;0..1;String;;2;Status do material específica da linha de vendas
+VALID_FROM;E1BPSGTMVKE;3;0..1;String;;8;Data a partir da qual vale status mat.específ.linha vendas
+CONF_MATL;E1BPSGTMVKE;3;0..1;String;;18;Material configurável geral
+MATERIAL_LONG;E1BPSGTMVKE;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+CONF_MATL_LONG;E1BPSGTMVKE;3;0..1;String;;40;Mat.configurável válido p/vários cens.(necessários 40 cars.)
+MATERIAL_EXTERNAL;E1BPSGTMVKE;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPSGTMVKE;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPSGTMVKE;3;0..1;String;;10;Nº de versão para campo MATERIAL
+CONF_MATL_EXTERNAL;E1BPSGTMVKE;3;0..1;String;;40;Nº material longo para o campo CONF_MATL
+CONF_MATL_GUID;E1BPSGTMVKE;3;0..1;String;;32;GUID externo para campo CONF_MATL
+CONF_MATL_VERSION;E1BPSGTMVKE;3;0..1;String;;10;Nº de versão para campo CONF_MATL
+REQ_SEG_LONG;E1BPSGTMVKE;3;0..1;String;;40;Segmento de necessidade
+E1BPSGTMARM;IDOC;2;0..999999;Complex;;;Retail Data Transfer: Segmentation based Weights and Volumes
+FUNCTION;E1BPSGTMARM;3;0..1;String;;3;Função
+MATERIAL;E1BPSGTMARM;3;0..1;String;;18;Nº do material
+ALT_UNIT;E1BPSGTMARM;3;0..1;String;;3;Unidade medida alternativa p/unid.gestão estoque
+ALT_UNIT_ISO;E1BPSGTMARM;3;0..1;String;;3;UM alternativa para a unidade gestão de estoque em code ISO
+STOCK_SEGMENT;E1BPSGTMARM;3;0..1;String;;16;Segmento de estoque
+CONF_MATL;E1BPSGTMARM;3;0..1;String;;18;Material configurável geral
+VOLUME;E1BPSGTMARM;3;0..1;String;;15;Volume
+GROSS_WT;E1BPSGTMARM;3;0..1;String;;15;Peso bruto
+NET_WEIGHT;E1BPSGTMARM;3;0..1;String;;15;Peso líquido
+MATERIAL_LONG;E1BPSGTMARM;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+CONF_MATL_LONG;E1BPSGTMARM;3;0..1;String;;40;Mat.configurável válido p/vários cens.(necessários 40 cars.)
+MATERIAL_EXTERNAL;E1BPSGTMARM;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPSGTMARM;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPSGTMARM;3;0..1;String;;10;Nº de versão para campo MATERIAL
+CONF_MATL_EXTERNAL;E1BPSGTMARM;3;0..1;String;;40;Nº material longo para o campo CONF_MATL
+CONF_MATL_GUID;E1BPSGTMARM;3;0..1;String;;32;GUID externo para campo CONF_MATL
+CONF_MATL_VERSION;E1BPSGTMARM;3;0..1;String;;10;Nº de versão para campo CONF_MATL
+STK_SEG_LONG;E1BPSGTMARM;3;0..1;String;;40;Segmento de estoque
+E1BPSGTMADKA;IDOC;2;0..999999;Complex;;;Retail Data Transfer: Segmentation Dependent  Valuation data
+FUNCTION;E1BPSGTMADKA;3;0..1;String;;3;Função
+MATERIAL;E1BPSGTMADKA;3;0..1;String;;18;Nº do material
+PLANT;E1BPSGTMADKA;3;0..1;String;;4;Centro
+STOCK_SEGMENT;E1BPSGTMADKA;3;0..1;String;;16;Segmento de estoque
+PREFERENCE_SEG_VALUE;E1BPSGTMADKA;3;0..1;String;;1;Valor de segmento de preferência
+VALUATION_TYPE;E1BPSGTMADKA;3;0..1;String;;10;Tipo de avaliação
+MATERIAL_LONG;E1BPSGTMADKA;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+MATERIAL_EXTERNAL;E1BPSGTMADKA;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPSGTMADKA;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPSGTMADKA;3;0..1;String;;10;Nº de versão para campo MATERIAL
+STK_SEG_LONG;E1BPSGTMADKA;3;0..1;String;;40;Segmento de estoque
+E1BPFSHSEASONS;IDOC;2;0..999999;Complex;;;Retail Data Transfer : Seasons Data
+FUNCTION;E1BPFSHSEASONS;3;0..1;String;;3;Função
+REQ_SEGMENT;E1BPFSHSEASONS;3;0..1;String;;16;Segmento de necessidade
+MATERIAL;E1BPFSHSEASONS;3;0..1;String;;18;Nº do material
+SEASON_YR;E1BPFSHSEASONS;3;0..1;String;;4;Exercício sazonal
+SEASON;E1BPFSHSEASONS;3;0..1;String;;4;Época
+COLLECTION;E1BPFSHSEASONS;3;0..1;String;;2;Coleção de moda
+THEME;E1BPFSHSEASONS;3;0..1;String;;4;Tema de moda
+SEASON1;E1BPFSHSEASONS;3;0..1;String;;1;Tipo de época 1
+SEASON2;E1BPFSHSEASONS;3;0..1;String;;1;Tipo de época 2
+SEASON3;E1BPFSHSEASONS;3;0..1;String;;1;Tipo de época 3
+ARTICLE_SEASON_DESC;E1BPFSHSEASONS;3;0..1;String;;80;Descrição da época do artigo
+SEASON_INDICATOR;E1BPFSHSEASONS;3;0..1;String;;1;Código de época
+CONF_MATL;E1BPFSHSEASONS;3;0..1;String;;18;Material configurável geral
+MATERIAL_LONG;E1BPFSHSEASONS;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+CONF_MATL_LONG;E1BPFSHSEASONS;3;0..1;String;;40;Mat.configurável válido p/vários cens.(necessários 40 cars.)
+MATERIAL_EXTERNAL;E1BPFSHSEASONS;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPFSHSEASONS;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPFSHSEASONS;3;0..1;String;;10;Nº de versão para campo MATERIAL
+CONF_MATL_EXTERNAL;E1BPFSHSEASONS;3;0..1;String;;40;Nº material longo para o campo CONF_MATL
+CONF_MATL_GUID;E1BPFSHSEASONS;3;0..1;String;;32;GUID externo para campo CONF_MATL
+CONF_MATL_VERSION;E1BPFSHSEASONS;3;0..1;String;;10;Nº de versão para campo CONF_MATL
+REQ_SEG_LONG;E1BPFSHSEASONS;3;0..1;String;;40;Segmento de necessidade
+E1BPSGTMLGN;IDOC;2;0..999999;Complex;;;Retail Data Transfer: Segmentation dependent Warehouse Data
+FUNCTION;E1BPSGTMLGN;3;0..1;String;;3;Função
+MATERIAL;E1BPSGTMLGN;3;0..1;String;;18;Nº do material
+WHSENUMBER;E1BPSGTMLGN;3;0..1;String;;3;Nº do depósito/complexo de depósito
+STOCK_SEGMENT;E1BPSGTMLGN;3;0..1;String;;16;Segmento de estoque
+STGESECTOR;E1BPSGTMLGN;3;0..1;String;;3;Código da área de armazenamento
+PLACEMENT;E1BPSGTMLGN;3;0..1;String;;3;Código da categoria de depósito para entrada em depósito
+WITHDRAWAL;E1BPSGTMLGN;3;0..1;String;;3;Código de ctg.de depósito para saída de depósito
+ADD_TO_STK;E1BPSGTMLGN;3;0..1;String;;1;Código: armazenamento adicional permitido
+BLOCK_STGE;E1BPSGTMLGN;3;0..1;String;;2;Código depósito em bloco
+MSG_TO_IM;E1BPSGTMLGN;3;0..1;String;;1;Código: mensagem para a administração de estoques
+SPEC_MVMT;E1BPSGTMLGN;3;0..1;String;;1;Código especial para movimento na administração de depósitos
+CAPY_USAGE;E1BPSGTMLGN;3;0..1;String;;13;Consumo de capacidade
+PROCURE_UN;E1BPSGTMLGN;3;0..1;String;;3;Unidade de medida de referência para consumo capacidade
+PROCURE_UN_ISO;E1BPSGTMLGN;3;0..1;String;;3;UM de referência para consumo de capacidade em code ISO
+_--32STEP_PICK;E1BPSGTMLGN;3;0..1;String;;1;Relevância do material para picking em 2 etapas
+MATERIAL_LONG;E1BPSGTMLGN;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+MATERIAL_EXTERNAL;E1BPSGTMLGN;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPSGTMLGN;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPSGTMLGN;3;0..1;String;;10;Nº de versão para campo MATERIAL
+STK_SEG_LONG;E1BPSGTMLGN;3;0..1;String;;40;Segmento de estoque
+E1BPSGTMLGT;IDOC;2;0..999999;Complex;;;Retail Data Transfer: Segmentation dependent Storage Data
+FUNCTION;E1BPSGTMLGT;3;0..1;String;;3;Função
+MATERIAL;E1BPSGTMLGT;3;0..1;String;;18;Nº do material
+WHSENUMBER;E1BPSGTMLGT;3;0..1;String;;3;Nº do depósito/complexo de depósito
+STGE_TYPE;E1BPSGTMLGT;3;0..1;String;;3;Tipo de depósito
+STOCK_SEGMENT;E1BPSGTMLGT;3;0..1;String;;16;Segmento de estoque
+STGE_BIN;E1BPSGTMLGT;3;0..1;String;;10;Posição no depósito
+MAX_SB_QTY;E1BPSGTMLGT;3;0..1;String;;15;Qtd.máxima posiç.no dep.
+MIN_SB_QTY;E1BPSGTMLGT;3;0..1;String;;15;Qtd.mínima posiç.no dep.
+CTRL_QTY;E1BPSGTMLGT;3;0..1;String;;15;Quantidade de manejo
+REPLEN_QTY;E1BPSGTMLGT;3;0..1;String;;15;Quantidade de reabastecimento
+PICK_AREA;E1BPSGTMLGT;3;0..1;String;;3;Área de picking
+ROUND_UNIT;E1BPSGTMLGT;3;0..1;String;;15;Qtd.arredond.
+MATERIAL_LONG;E1BPSGTMLGT;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+MATERIAL_EXTERNAL;E1BPSGTMLGT;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPSGTMLGT;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPSGTMLGT;3;0..1;String;;10;Nº de versão para campo MATERIAL
+STK_SEG_LONG;E1BPSGTMLGT;3;0..1;String;;40;Segmento de estoque
+E1BPSGTMRPGN;IDOC;2;0..999999;Complex;;;Retail Data Transfer: Segmentation dependent MRP Gen data
+FUNCTION;E1BPSGTMRPGN;3;0..1;String;;3;Função
+MATERIAL;E1BPSGTMRPGN;3;0..1;String;;18;Nº do material
+PLANT;E1BPSGTMRPGN;3;0..1;String;;4;Centro
+STOCK_SEGMENT;E1BPSGTMRPGN;3;0..1;String;;16;Segmento de estoque
+INHSEPRODT;E1BPSGTMRPGN;3;0..1;String;;4;Tempo de produção interna
+PUR_GROUP;E1BPSGTMRPGN;3;0..1;String;;3;Grupo de compradores
+PLND_DELRY;E1BPSGTMRPGN;3;0..1;String;;4;Prazo de entrega previsto em dias
+SAFTY_T_ID;E1BPSGTMRPGN;3;0..1;String;;1;Código de margem de segurança (com/sem margem de segurança)
+SAFETYTIME;E1BPSGTMRPGN;3;0..1;String;;2;Período de segurança (em dias de trabalho)
+REPLENTIME;E1BPSGTMRPGN;3;0..1;String;;4;Tempo total de reposição (dias de trabalho)
+ATP_MRP_STATUS;E1BPSGTMRPGN;3;0..1;String;;2;Status ATP/MRP para material e segmento
+CONF_MATL;E1BPSGTMRPGN;3;0..1;String;;18;Material configurável geral
+SEGMENTATION_VALIDFROM;E1BPSGTMRPGN;3;0..1;String;;8;Data a partir da qual status material espec.centro é válida
+MATERIAL_LONG;E1BPSGTMRPGN;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+CONF_MATL_LONG;E1BPSGTMRPGN;3;0..1;String;;40;Mat.configurável válido p/vários cens.(necessários 40 cars.)
+MATERIAL_EXTERNAL;E1BPSGTMRPGN;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPSGTMRPGN;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPSGTMRPGN;3;0..1;String;;10;Nº de versão para campo MATERIAL
+CONF_MATL_EXTERNAL;E1BPSGTMRPGN;3;0..1;String;;40;Nº material longo para o campo CONF_MATL
+CONF_MATL_GUID;E1BPSGTMRPGN;3;0..1;String;;32;GUID externo para campo CONF_MATL
+CONF_MATL_VERSION;E1BPSGTMRPGN;3;0..1;String;;10;Nº de versão para campo CONF_MATL
+STK_SEG_LONG;E1BPSGTMRPGN;3;0..1;String;;40;Segmento de estoque
+E1BPSGTMRP;IDOC;2;0..999999;Complex;;;Retail Data Transfer: Segmentation dependent quantity based
+FUNCTION;E1BPSGTMRP;3;0..1;String;;3;Função
+MATERIAL;E1BPSGTMRP;3;0..1;String;;18;Nº do material
+PLANT;E1BPSGTMRP;3;0..1;String;;4;Centro
+STOCK_SEGMENT;E1BPSGTMRP;3;0..1;String;;16;Segmento de estoque
+SAFETY_STK;E1BPSGTMRP;3;0..1;String;;15;Estoque de segurança
+MINLOTSIZE;E1BPSGTMRP;3;0..1;String;;15;Tamanho mínimo do lote
+ROUND_VAL;E1BPSGTMRP;3;0..1;String;;15;Valor de arredondamento da quantidade pedida
+CONF_MATL;E1BPSGTMRP;3;0..1;String;;18;Material configurável geral
+MATERIAL_LONG;E1BPSGTMRP;3;0..1;String;;40;Nº material (40 caracteres, necessário por razões técnicas)
+CONF_MATL_LONG;E1BPSGTMRP;3;0..1;String;;40;Mat.configurável válido p/vários cens.(necessários 40 cars.)
+MATERIAL_EXTERNAL;E1BPSGTMRP;3;0..1;String;;40;Nº de material longo para o campo MATERIAL
+MATERIAL_GUID;E1BPSGTMRP;3;0..1;String;;32;GUID externo para campo MATERIAL
+MATERIAL_VERSION;E1BPSGTMRP;3;0..1;String;;10;Nº de versão para campo MATERIAL
+CONF_MATL_EXTERNAL;E1BPSGTMRP;3;0..1;String;;40;Nº material longo para o campo CONF_MATL
+CONF_MATL_GUID;E1BPSGTMRP;3;0..1;String;;32;GUID externo para campo CONF_MATL
+CONF_MATL_VERSION;E1BPSGTMRP;3;0..1;String;;10;Nº de versão para campo CONF_MATL
+STK_SEG_LONG;E1BPSGTMRP;3;0..1;String;;40;Segmento de estoque
+E1IDOCENHANCEMENT;IDOC;2;0..999999;Complex;;;Segment for Dynamic Enhancement of IDoc Types
+IDENTIFIER;E1IDOCENHANCEMENT;3;0..1;String;;30;Containers de dados para ampliação de tipos de IDoc
+DATA;E1IDOCENHANCEMENT;3;0..1;String;;970;Container de dados para ampliação de IDoc
